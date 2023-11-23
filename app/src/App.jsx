@@ -1,6 +1,6 @@
 function App() {
   return (
-    <div>App</div>
+    <div id="app-container"></div>
   )
 }
 export default App

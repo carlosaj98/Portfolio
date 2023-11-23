@@ -1,20 +1,11 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 import App from "./App"
-import { GlobalStyles } from "@mui/material"
+import IndexStyles from "./utils/IndexStyles"
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <>
-    <GlobalStyles
-      styles={{
-        root: {},
-        "*": {
-          margin: "0",
-          padding: "0",
-          boxSizing: "border-box",
-        },
-      }}
-    />
+    <IndexStyles/>
     <App />
   </>
 )
