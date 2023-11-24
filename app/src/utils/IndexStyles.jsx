@@ -5,9 +5,14 @@ function IndexStyles() {
     <GlobalStyles
       styles={{
         ":root": {
-          "--bg-color": "#1c1050",
-          "--bg-color-dark": "#160c41",
-          "--bg-color-light": "#361d9f",
+          "--primary-color": "#1C3659",
+          "--primary-color-dark": "#171B26",
+          "--primary-color-light": "#0798F2",
+          "--secondary-color": "#F2C879",
+          "--secondary-color-dark": "#D9C49C",
+          "--secondary-color-light": "#FAEACB",
+          "--font-title": "Lexend, sans-serif",
+          "--font-text": "Inter, sans-serif",
         },
         "*": {
           margin: "0",
@@ -15,14 +20,13 @@ function IndexStyles() {
           boxSizing: "border-box",
         },
         body: {
-          fontFamily: "Poppins, sans-serif",
+          backgroundColor: "black",
+          fontFamily:"var(--font-text)"
         },
 
         "#app-container": {
-          backgroundColor: "white",
-          backgroundImage: "url(/background_desktop.png)",
-          backgroundSize: "cover",
-          width: "100vw",
+          backgroundColor: "black",
+          maxWidth: "100vw",
           minHeight: "100vh",
         },
       }}
