@@ -1,4 +1,4 @@
-import { Stack, styled } from "@mui/material"
+import { Stack, keyframes, styled } from "@mui/material"
 
 const HomeContainer = styled(Stack)({
   flexDirection: "row",
@@ -11,7 +11,8 @@ const HomeContainer = styled(Stack)({
   "#container": {
     display: "flex",
     alignItems: "center",
-    justifyContent: "space-between",
+    justifyContent: "center",
+    gap:"32px"
   },
 
   h1: {
@@ -21,26 +22,31 @@ const HomeContainer = styled(Stack)({
   },
 
   h2: {
-    color: "var(--primary-color-light)",
     fontFamily: "var(--font-title)",
-    textShadow: "0 0 12px var(--primary-color-light)",
   },
 
   p: {
     color: "white",
     fontSize: "18px",
     fontFamily: "var(--font-text)",
-    maxWidth: "550px",
+    maxWidth: "650px",
     marginTop: "24px",
     textShadow: "0 0 6px white",
   },
 
   img: {
     width: "100%",
-    boxShadow:
-      "0 0 30px 0px var(--primary-color-light), 0 0 30px 0px var(--primary-color-light) inset",
-    borderRadius: "50%",
-    border: "3px solid var(--primary-color-light)",
+    height:"auto",
+  },
+
+  ".animate__fadeInLeft":{
+    animationDuration:"0.75s",
+    animationDelay:"0s"
+  },
+
+  ".animate__fadeInRight":{
+    animationDuration:"0.75s",
+    animationDelay:"0s"
   },
 })
 

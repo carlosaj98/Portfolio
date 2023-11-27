@@ -1,5 +1,6 @@
 import { Stack } from "@mui/material"
 import { Navbar, HomeSection } from "./layouts"
+import "animate.css"
 
 function App() {
   return (
