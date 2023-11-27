@@ -1,10 +1,12 @@
 import { Stack } from "@mui/material"
-import HomeSection from "./layouts/HomeSection/HomeSection"
+import { Navbar, HomeSection } from "./layouts"
 
 function App() {
   return (
     <Stack id="app-container" alignItems={"center"}>
-      <Stack className="sections" width={"100%"} height={"100%"}>
+      <Navbar/>
+      <Stack id="sections-container" width={"100%"} height={"100%"}>
+        <HomeSection />
         <HomeSection />
       </Stack>
     </Stack>

@@ -5,12 +5,16 @@ function IndexStyles() {
     <GlobalStyles
       styles={{
         ":root": {
+          "--hero-bg-color": "#02040E",
+
           "--primary-color": "#1C3659",
           "--primary-color-dark": "#171B26",
           "--primary-color-light": "#0798F2",
+
           "--secondary-color": "#F2C879",
           "--secondary-color-dark": "#D9C49C",
           "--secondary-color-light": "#FAEACB",
+
           "--font-title": "Lexend, sans-serif",
           "--font-text": "Inter, sans-serif",
         },
@@ -21,7 +25,7 @@ function IndexStyles() {
         },
         body: {
           backgroundColor: "black",
-          fontFamily:"var(--font-text)"
+          fontFamily: "var(--font-text)",
         },
 
         "#app-container": {
