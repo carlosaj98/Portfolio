@@ -8,7 +8,6 @@ function App() {
       <Navbar/>
       <Stack id="sections-container" width={"100%"} height={"100%"}>
         <HomeSection />
-        <HomeSection />
       </Stack>
     </Stack>
   )

@@ -12,14 +12,22 @@ import HeroTextsContainer from "./Style"
 function HeroTexts({ titleIndex, currentTitle }) {
   return (
     <HeroTextsContainer className="text-intro-container animate__fadeInLeft">
-      <Typography variant="h1">
-        Hi!, 👋<br></br>I`m Carlos
+      <Typography
+        variant="h1"
+        textAlign={{ md: "left", xs: "center" }}
+        fontSize={{ md: "6rem", xs: "4rem" }}
+      >
+        Hi!, 👋
+        <br />
+        I`m Carlos
       </Typography>
       {titleIndex === 0 && (
         <Typography
           variant="h2"
           className="animate__fadeInLeft"
           color="var(--primary-color-light)"
+          textAlign={{ md: "left", xs: "center" }}
+          fontSize={{ md: "4rem", xs: "2rem" }}
           sx={{
             textShadow: "0 0 12px var(--primary-color-light)",
           }}
@@ -33,6 +41,8 @@ function HeroTexts({ titleIndex, currentTitle }) {
           variant="h2"
           className="animate__fadeInLeft"
           color="var(--secondary-color)"
+          textAlign={{ md: "left", xs: "center" }}
+          fontSize={{ md: "4rem", xs: "2rem" }}
           sx={{
             textShadow: "0 0 12px var(--secondary-color)",
           }}
@@ -41,7 +51,7 @@ function HeroTexts({ titleIndex, currentTitle }) {
         </Typography>
       )}
 
-      <Typography id="hero-text-desc">
+      <Typography id="hero-text-desc" textAlign={{ md: "left", xs: "center" }} fontSize={{ md: "1.15rem", xs: "1rem" }}>
         Versatile professional seamlessly integrating technology and creativity.
         Merging technical expertise with artistic vision to deliver innovative
         solutions. Let's connect to elevate your projects together!
@@ -52,6 +62,7 @@ function HeroTexts({ titleIndex, currentTitle }) {
         flexDirection={"row"}
         gap={"18px"}
         alignItems={"center"}
+        justifyContent={{ md: "flex-start", xs: "center" }}
       >
         <Link
           href="https://www.linkedin.com/in/carlosaj98"

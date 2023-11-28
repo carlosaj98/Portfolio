@@ -1,23 +1,18 @@
 import { Stack, keyframes, styled } from "@mui/material"
 
 const HomeContainer = styled(Stack)({
-  flexDirection: "row",
-  gap: "64px",
-  height: "100vh",
+  minHeight: "100vh",
   background: `
   radial-gradient(ellipse at bottom, var(--primary-color-light) -200%, var(--hero-bg-color) 70%)
   `,
+  justifyContent:"center",
 
   "#container": {
-    display: "flex",
+    height:"100%",
     alignItems: "center",
     justifyContent: "center",
-    gap:"32px"
-  },
-
-  img: {
-    width: "100%",
-    height:"auto",
+    gap:"32px",
+    margin:"0 auto",
   },
 
   ".animate__fadeInLeft":{

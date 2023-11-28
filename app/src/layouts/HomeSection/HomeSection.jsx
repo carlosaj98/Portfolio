@@ -18,11 +18,15 @@ function HomeSection() {
   const currentTitle = heroTitles[currentTitleIndex]
 
   return (
-    <HomeContainer component="section" id="home-section">
-      <Container id="container">
+    <HomeContainer component="section" id="home-section" padding={{sm:"0px", xs:"80px 0px"}}>
+      <Stack
+        id="container"
+        flexDirection={{ md: "row", xs: "column" }}
+        padding={{ md: "0px 24px", xs: "0px 16px" }}
+      >
         <HeroTexts titleIndex={currentTitleIndex} currentTitle={currentTitle} />
         <HeroImage titleIndex={currentTitleIndex} />
-      </Container>
+      </Stack>
     </HomeContainer>
   )
 }

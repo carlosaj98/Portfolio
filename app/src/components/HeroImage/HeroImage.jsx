@@ -1,10 +1,12 @@
 import { Box } from "@mui/material"
+import HeroImageContainer from "./Style"
 
 function HeroImage({ titleIndex }) {
   return (
-    <Box
+    <HeroImageContainer
       className="animate__fadeInRight"
-      width="450px"
+      width={{ md: "550px", xs: "200px" }}
+      order={{md:"1", xs:"-1"}}
       id="hero-img-container"
       sx={{
         boxShadow:
@@ -20,7 +22,7 @@ function HeroImage({ titleIndex }) {
       }}
     >
       <img src="/profile-image.png" />
-    </Box>
+    </HeroImageContainer>
   )
 }
 export default HeroImage

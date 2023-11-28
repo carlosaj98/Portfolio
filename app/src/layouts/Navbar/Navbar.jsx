@@ -3,7 +3,7 @@ import NavbarContainer from "./Style"
 
 function Navbar() {
   return (
-    <NavbarContainer>
+    <NavbarContainer marginTop={{md:"32px", xs:"0px"}}>
       <Link>Home</Link>
       <Link>About me</Link>
       <Link>Works</Link>
