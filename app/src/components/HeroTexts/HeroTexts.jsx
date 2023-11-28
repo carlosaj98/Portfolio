@@ -4,6 +4,7 @@ import {
   IconLinkedin,
   IconArtstation,
   IconGithub,
+  IconDownload,
 } from "../../common/Icons/Icons"
 
 import HeroTextsContainer from "./Style"
@@ -41,22 +42,23 @@ function HeroTexts({ titleIndex, currentTitle }) {
       )}
 
       <Typography id="hero-text-desc">
-        Full Stack Developer and 3D Artist blending technology and creativity.
-        Bridging technical functionality with artistic vision for innovative
-        solutions.
-        <br /> Let's connect to elevate your projects together!
+        Versatile professional seamlessly integrating technology and creativity.
+        Merging technical expertise with artistic vision to deliver innovative
+        solutions. Let's connect to elevate your projects together!
       </Typography>
       <Stack
         id="social-media-links"
-        marginTop={"24px"}
+        marginTop={"32px"}
         flexDirection={"row"}
         gap={"18px"}
+        alignItems={"center"}
       >
         <Link
           href="https://www.linkedin.com/in/carlosaj98"
           target="_blank"
           width={"30px"}
           height={"30px"}
+          className="social-media-links"
         >
           <IconLinkedin color={"rgba(255,255,255,0.5)"} />
         </Link>
@@ -65,6 +67,7 @@ function HeroTexts({ titleIndex, currentTitle }) {
           target="_blank"
           width={"30px"}
           height={"30px"}
+          className="social-media-links"
         >
           <IconArtstation color={"rgba(255,255,255,0.5)"} />
         </Link>
@@ -74,8 +77,17 @@ function HeroTexts({ titleIndex, currentTitle }) {
           target="_blank"
           width={"30px"}
           height={"30px"}
+          className="social-media-links"
         >
           <IconGithub color={"rgba(255,255,255,0.5)"} />
+        </Link>
+        <Link
+          href="/CV_CarlosAlvarez.pdf"
+          download="CV_CarlosAlvarez"
+          className="cv-download"
+        >
+          Download CV
+          <IconDownload color={"black"} size={"1rem"} />
         </Link>
       </Stack>
     </HeroTextsContainer>
