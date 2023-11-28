@@ -15,25 +15,6 @@ const HomeContainer = styled(Stack)({
     gap:"32px"
   },
 
-  h1: {
-    color: "white",
-    fontFamily: "var(--font-title)",
-    textShadow: "0 0 12px white",
-  },
-
-  h2: {
-    fontFamily: "var(--font-title)",
-  },
-
-  p: {
-    color: "white",
-    fontSize: "18px",
-    fontFamily: "var(--font-text)",
-    maxWidth: "650px",
-    marginTop: "24px",
-    textShadow: "0 0 6px white",
-  },
-
   img: {
     width: "100%",
     height:"auto",
