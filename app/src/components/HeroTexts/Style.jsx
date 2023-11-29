@@ -2,6 +2,7 @@ import { Stack, styled } from "@mui/material"
 
 const HeroTextsContainer = styled(Stack)({
   width:"100%",
+  gap:"12px",
   h1: {
     color: "white",
     fontFamily: "var(--font-title)",
@@ -16,7 +17,7 @@ const HeroTextsContainer = styled(Stack)({
     color: "white",
     fontFamily: "var(--font-text)",
     maxWidth: "650px",
-    marginTop: "24px",
+    marginTop: "12px",
     textShadow: "0 0 6px white",
   },
 

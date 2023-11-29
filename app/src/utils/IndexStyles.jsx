@@ -22,15 +22,16 @@ function IndexStyles() {
           margin: "0",
           padding: "0",
           boxSizing: "border-box",
+          
         },
         body: {
           backgroundColor: "black",
           fontFamily: "var(--font-text)",
+          overflowX:"hidden"
         },
 
         "#app-container": {
           backgroundColor: "black",
-          maxWidth: "100vw",
           minHeight: "100vh",
         },
       }}

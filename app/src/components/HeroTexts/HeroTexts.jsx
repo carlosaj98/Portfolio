@@ -17,7 +17,7 @@ function HeroTexts({ titleIndex, currentTitle }) {
         textAlign={{ md: "left", xs: "center" }}
         fontSize={{ md: "6rem", xs: "4rem" }}
       >
-        Hi!, 👋
+        Hi! 👋,
         <br />
         I`m Carlos
       </Typography>
@@ -27,7 +27,7 @@ function HeroTexts({ titleIndex, currentTitle }) {
           className="animate__fadeInLeft"
           color="var(--primary-color-light)"
           textAlign={{ md: "left", xs: "center" }}
-          fontSize={{ md: "4rem", xs: "2rem" }}
+          fontSize={{ md: "3.5rem", xs: "2rem" }}
           sx={{
             textShadow: "0 0 12px var(--primary-color-light)",
           }}
@@ -42,7 +42,7 @@ function HeroTexts({ titleIndex, currentTitle }) {
           className="animate__fadeInLeft"
           color="var(--secondary-color)"
           textAlign={{ md: "left", xs: "center" }}
-          fontSize={{ md: "4rem", xs: "2rem" }}
+          fontSize={{ md: "3.5rem", xs: "2rem" }}
           sx={{
             textShadow: "0 0 12px var(--secondary-color)",
           }}
