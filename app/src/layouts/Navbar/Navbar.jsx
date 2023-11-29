@@ -11,7 +11,6 @@ function Navbar() {
         return (
           <Link
             key={link.id}
-            id={link.id}
             href={"#" + link.id}
             padding={{ sm: "12px 24px", xs: "6px 12px" }}
           >

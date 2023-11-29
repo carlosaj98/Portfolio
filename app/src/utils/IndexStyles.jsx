@@ -22,17 +22,25 @@ function IndexStyles() {
           margin: "0",
           padding: "0",
           boxSizing: "border-box",
-          
         },
+        html: {
+          scrollBehavior: "smooth",
+          scrollSnapType: "y mandatory",
+        },
+
         body: {
           backgroundColor: "black",
           fontFamily: "var(--font-text)",
-          overflowX:"hidden"
+          overflowX: "hidden",
         },
 
         "#app-container": {
           backgroundColor: "black",
           minHeight: "100vh",
+        },
+        
+        section: {
+          scrollSnapAlign: "start",
         },
       }}
     />
