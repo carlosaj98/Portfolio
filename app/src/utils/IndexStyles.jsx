@@ -15,6 +15,10 @@ function IndexStyles() {
           "--secondary-color-dark": "#D9C49C",
           "--secondary-color-light": "#FAEACB",
 
+          "--gray":"#ffffff80",
+          "--gray-dark":"#ffffff40",
+          "--gray-light":"#ffffffbf",
+
           "--font-title": "Lexend, sans-serif",
           "--font-text": "Inter, sans-serif",
         },

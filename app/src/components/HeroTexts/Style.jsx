@@ -1,8 +1,8 @@
 import { Stack, styled } from "@mui/material"
 
 const HeroTextsContainer = styled(Stack)({
-  width:"100%",
-  gap:"12px",
+  width: "100%",
+  gap: "12px",
   h1: {
     color: "white",
     fontFamily: "var(--font-title)",
@@ -25,29 +25,31 @@ const HeroTextsContainer = styled(Stack)({
     transition: "scale 0.15s ease-out, fill 0.15s ease-out",
     "&:hover": {
       scale: "1.2",
-      fill: "white",
+      fill: "var(--gray-light)",
     },
   },
 
   ".cv-download": {
     textDecoration: "none",
-    backgroundColor: "rgba(255,255,255,0.8)",
-    padding: "8px 16px",
-    borderRadius: "24px",
-    color: "var(--primary-color-dark)",
+    padding: "12px 16px",
+    borderRadius: "12px",
+    border: "2px solid var(--gray)",
+    color: "var(--gray)",
     fontFamily: "var(--font-text)",
     fontWeight: "500",
     transition:
-      "background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease",
+      "background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease",
     display: "flex",
     alignItems: "center",
     jusifyContent: "center",
     gap: "12px",
     "&:hover": {
-      backgroundColor: "var(--primary-color-dark)",
-      color: "white",
-      boxShadow: "0 0 16px white",
-      svg: { fill: "white", transition: "fill 0.3s ease" },
+      backgroundColor: "var(--gray-light)",
+      borderColor: "var(--gray-light)",
+      color: "var(--primary-color-dark)",
+      border: "2px solid transparent",
+      boxShadow: "0 0 16px var(--gray-light)",
+      svg: { fill: "var(--primary-color-dark)", transition: "fill 0.3s ease" },
     },
   },
 })

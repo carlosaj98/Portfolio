@@ -71,7 +71,7 @@ function HeroTexts({ titleIndex, currentTitle }) {
           height={"30px"}
           className="social-media-links"
         >
-          <IconLinkedin color={"rgba(255,255,255,0.5)"} />
+          <IconLinkedin color={"var(--gray)"} />
         </Link>
         <Link
           href="https://www.artstation.com/carlosaj"
@@ -80,7 +80,7 @@ function HeroTexts({ titleIndex, currentTitle }) {
           height={"30px"}
           className="social-media-links"
         >
-          <IconArtstation color={"rgba(255,255,255,0.5)"} />
+          <IconArtstation color={"var(--gray)"} />
         </Link>
 
         <Link
@@ -90,7 +90,7 @@ function HeroTexts({ titleIndex, currentTitle }) {
           height={"30px"}
           className="social-media-links"
         >
-          <IconGithub color={"rgba(255,255,255,0.5)"} />
+          <IconGithub color={"var(--gray)"} />
         </Link>
         <Link
           href="/CV_CarlosAlvarez.pdf"
@@ -98,7 +98,7 @@ function HeroTexts({ titleIndex, currentTitle }) {
           className="cv-download"
         >
           Download CV
-          <IconDownload color={"black"} size={"1rem"} />
+          <IconDownload color={"var(--gray)"} size={"1rem"} />
         </Link>
       </Stack>
     </HeroTextsContainer>
