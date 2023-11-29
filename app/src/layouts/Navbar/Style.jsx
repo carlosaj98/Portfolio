@@ -14,18 +14,20 @@ const NavbarContainer = styled(Stack)({
   zIndex: "10",
 
   a: {
-    textAllign: "center",
+    display:"flex",
+    alignItems:"center",
+    justifyContent:"center",
     textDecoration: "none",
     color: "var(--primary-color-dark)",
     fontFamily: "var(--font-title)",
-    padding: "12px 24px",
     borderRadius: "64px",
     cursor: "pointer",
     transition: "background-color 0.3s ease, color 0.3s ease",
     "&:hover": {
       backgroundColor: "var(--primary-color-dark)",
       color: "white",
-    },
+      svg: {fill: "white", transition:"fill 0.3s ease"}
+    }
   },
 })
 
