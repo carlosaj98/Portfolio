@@ -27,7 +27,6 @@ function About3D() {
             <Stack
               key={skill.id}
               className="skill-dev"
-              border={"1px solid red"}
             >
               <Box width={"50px"} height={"50px"}>
                 {skill.icon}

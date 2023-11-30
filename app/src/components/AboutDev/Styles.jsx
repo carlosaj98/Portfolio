@@ -15,13 +15,12 @@ const AboutDevContainer = styled(Stack)({
 
   ".skill-dev": {
     alignItems: "center",
-    justifyContent: "center",
     gap: "6px",
     background:
       "linear-gradient(var(--primary-color),var(--primary-color-dark))",
     boxShadow: "0 10px 15px black",
     width: "100px",
-    height: "100px",
+    padding:"12px",
     borderRadius: "12px",
     border: "2px solid var(--primary-color)",
   },

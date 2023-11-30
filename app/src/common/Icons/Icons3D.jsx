@@ -30,11 +30,11 @@ function IconMaya() {
           x2="86.576"
           y2="91.058"
         >
-          <stop offset=".09" stop-color="#1A5964"></stop>
-          <stop offset=".3" stop-color="#137078"></stop>
-          <stop offset=".5" stop-color="#0E8085"></stop>
-          <stop offset=".66" stop-color="#0C858A"></stop>
-          <stop offset="1" stop-color="#0A8B8F"></stop>
+          <stop offset=".09" stopColor="#1A5964"></stop>
+          <stop offset=".3" stopColor="#137078"></stop>
+          <stop offset=".5" stopColor="#0E8085"></stop>
+          <stop offset=".66" stopColor="#0C858A"></stop>
+          <stop offset="1" stopColor="#0A8B8F"></stop>
         </linearGradient>
         <linearGradient
           id="maya-original-b"
@@ -44,9 +44,9 @@ function IconMaya() {
           x2="130.166"
           y2="75.523"
         >
-          <stop offset="0" stop-color="#079EA0"></stop>
-          <stop offset=".43" stop-color="#14878E"></stop>
-          <stop offset="1" stop-color="#256A77"></stop>
+          <stop offset="0" stopColor="#079EA0"></stop>
+          <stop offset=".43" stopColor="#14878E"></stop>
+          <stop offset="1" stopColor="#256A77"></stop>
         </linearGradient>
         <linearGradient
           id="maya-original-c"
@@ -56,9 +56,9 @@ function IconMaya() {
           x2="112"
           y2="120.497"
         >
-          <stop offset="0" stop-color="#B4B4B4"></stop>
-          <stop offset=".8" stop-color="#03ABAB"></stop>
-          <stop offset="1" stop-color="#137980"></stop>
+          <stop offset="0" stopColor="#B4B4B4"></stop>
+          <stop offset=".8" stopColor="#03ABAB"></stop>
+          <stop offset="1" stopColor="#137980"></stop>
         </linearGradient>
         <linearGradient
           id="maya-original-d"
@@ -68,12 +68,12 @@ function IconMaya() {
           x2="135.485"
           y2="42.575"
         >
-          <stop offset="0" stop-color="#0F5D64"></stop>
-          <stop offset=".1" stop-color="#097A7E"></stop>
-          <stop offset=".23" stop-color="#049395"></stop>
-          <stop offset=".34" stop-color="#01A3A3"></stop>
-          <stop offset=".43" stop-color="#00A8A8"></stop>
-          <stop offset="1" stop-color="#4EBCC1"></stop>
+          <stop offset="0" stopColor="#0F5D64"></stop>
+          <stop offset=".1" stopColor="#097A7E"></stop>
+          <stop offset=".23" stopColor="#049395"></stop>
+          <stop offset=".34" stopColor="#01A3A3"></stop>
+          <stop offset=".43" stopColor="#00A8A8"></stop>
+          <stop offset="1" stopColor="#4EBCC1"></stop>
         </linearGradient>
         <linearGradient
           id="maya-original-e"
@@ -83,9 +83,9 @@ function IconMaya() {
           x2="26.772"
           y2="50.748"
         >
-          <stop offset="0" stop-color="#00A9A9"></stop>
-          <stop offset=".65" stop-color="#049496"></stop>
-          <stop offset="1" stop-color="#088286"></stop>
+          <stop offset="0" stopColor="#00A9A9"></stop>
+          <stop offset=".65" stopColor="#049496"></stop>
+          <stop offset="1" stopColor="#088286"></stop>
         </linearGradient>
         <linearGradient
           id="maya-original-f"
@@ -95,8 +95,8 @@ function IconMaya() {
           x2="32.014"
           y2="89.985"
         >
-          <stop offset="0" stop-color="#20626E"></stop>
-          <stop offset="1" stop-color="#069D9F"></stop>
+          <stop offset="0" stopColor="#20626E"></stop>
+          <stop offset="1" stopColor="#069D9F"></stop>
         </linearGradient>
         <linearGradient
           id="maya-original-g"
@@ -106,9 +106,9 @@ function IconMaya() {
           x2="36.336"
           y2="101.578"
         >
-          <stop offset="0" stop-color="#99CBD2"></stop>
-          <stop offset=".9" stop-color="#498F93"></stop>
-          <stop offset="1" stop-color="#2E7B7D"></stop>
+          <stop offset="0" stopColor="#99CBD2"></stop>
+          <stop offset=".9" stopColor="#498F93"></stop>
+          <stop offset="1" stopColor="#2E7B7D"></stop>
         </linearGradient>
       </defs>
       <path fill="url(#maya-original-a)" d="M98 121h3V49l-6 9v56l3 7z"></path>

@@ -15,14 +15,14 @@ const About3DContainer = styled(Stack)({
 
   ".skill-dev": {
     alignItems: "center",
-    justifyContent: "center",
+
     gap: "6px",
     background:
       "linear-gradient(var(--secondary-color),var(--secondary-color-dark))",
     boxShadow: "0 10px 15px black",
     width: "100px",
-    height: "100px",
     borderRadius: "12px",
+    padding:"12px",
     border: "2px solid var(--secondary-color)",
     fontWeight:"700",
     color:"black"
