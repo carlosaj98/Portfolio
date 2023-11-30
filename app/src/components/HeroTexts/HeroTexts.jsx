@@ -11,7 +11,7 @@ import HeroTextsContainer from "./Style"
 
 function HeroTexts({ titleIndex, currentTitle }) {
   return (
-    <HeroTextsContainer className="text-intro-container animate__fadeInLeft">
+    <HeroTextsContainer className="text-intro-container animate__fadeInLeft" alignItems={{md:"flex-start", xs:"center"}}>
       <Typography
         variant="h1"
         textAlign={{ md: "left", xs: "center" }}

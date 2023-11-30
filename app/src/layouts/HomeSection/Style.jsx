@@ -7,11 +7,11 @@ const HomeContainer = styled(Stack)({
   `,
 
   "#container": {
+    display:"flex",
     height:"100%",
     alignItems: "center",
     justifyContent: "center",
     gap:"24px",
-    margin:"0 auto",
   },
 
   ".animate__fadeInLeft":{
