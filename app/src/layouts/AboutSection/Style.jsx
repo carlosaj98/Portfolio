@@ -13,7 +13,8 @@ const AboutContainer = styled(Stack)({
     flexDirection:"column",
     alignItems: "center",
     gap: "24px",
-    height:"100%"
+    height:"100%",
+    marginBottom:"64px"
   },
 
   "#about-title":{

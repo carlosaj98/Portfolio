@@ -1,6 +1,6 @@
 import { Container, Stack, Typography } from "@mui/material"
 import AboutContainer from "./Style"
-import { AboutDev } from "../../components"
+import { AboutDev, About3D } from "../../components"
 function AboutSection() {
   return (
     <AboutContainer component={"section"} id="about-section">
@@ -10,6 +10,7 @@ function AboutSection() {
         </Typography>
         <Stack gap={"64px"} justifyContent={"space-between"}>
           <AboutDev />
+          <About3D />
         </Stack>
       </Container>
     </AboutContainer>

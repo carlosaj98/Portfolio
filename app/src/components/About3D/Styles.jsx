@@ -1,6 +1,6 @@
 import { Stack, styled } from "@mui/material"
 
-const AboutDevContainer = styled(Stack)({
+const About3DContainer = styled(Stack)({
   marginTop:"32px",
   flexDirection: "row",
   justifyContent:"space-between",
@@ -18,12 +18,14 @@ const AboutDevContainer = styled(Stack)({
     justifyContent: "center",
     gap: "6px",
     background:
-      "linear-gradient(var(--primary-color),var(--primary-color-dark))",
+      "linear-gradient(var(--secondary-color),var(--secondary-color-dark))",
     boxShadow: "0 10px 15px black",
     width: "100px",
     height: "100px",
     borderRadius: "12px",
-    border: "2px solid var(--primary-color)",
+    border: "2px solid var(--secondary-color)",
+    fontWeight:"700",
+    color:"black"
   },
 
   "#text-dev-container": {
@@ -39,9 +41,9 @@ const AboutDevContainer = styled(Stack)({
   "#dev-title":{
     fontFamily:"var(--font-title)",
     fontSize:"var(--font-size-M)",
-    color:"var(--primary-color-light)",
+    color:"var(--secondary-color)",
 
   }
 })
 
-export default AboutDevContainer
+export default About3DContainer

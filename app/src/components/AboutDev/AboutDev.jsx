@@ -13,12 +13,15 @@ function AboutDev() {
               <Box width={"50px"} height={"50px"}>
                 {skill.icon}
               </Box>
-              <Box fontSize={"12px"} textAlign={"center"}>{skill.text}</Box>
+              <Box fontSize={"12px"} textAlign={"center"}>
+                {skill.text}
+              </Box>
             </Stack>
           )
         })}
       </Stack>
-      <Stack id="text-dev-container">
+      <Box border={"1px solid var(--gray-dark)"}></Box>
+      <Stack id="text-dev-container" lineHeight={"var(--font-size-M)"}>
         <Stack>
           <Box width={"30px"}>
             <IconDev color={"var(--primary-color-light)"} />
