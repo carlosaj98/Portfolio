@@ -4,27 +4,27 @@ const NavLinks = [
   {
     title: "Home",
     id: "home-section",
-    icon: <IconHome color={"var(--primary-color-dark)"} size={"20px"} />,
+    icon: <IconHome color={"var(--gray-light)"} size={"25px"} />,
   },
   {
     title: "About me",
     id: "about-section",
-    icon: <IconAbout color={"var(--primary-color-dark)"} size={"20px"} />,
+    icon: <IconAbout color={"var(--gray-light)"} size={"25px"} />,
   },
   {
     title: "Works",
     id: "works-section",
-    icon: <IconWorks color={"var(--primary-color-dark)"} size={"20px"} />,
+    icon: <IconWorks color={"var(--gray-light)"} size={"25px"} />,
   },
   {
     title: "Background",
     id: "background-section",
-    icon: <IconBackground color={"var(--primary-color-dark)"} size={"20px"} />,
+    icon: <IconBackground color={"var(--gray-light)"} size={"25px"} />,
   },
   {
     title: "Contact",
     id: "contact-section",
-    icon: <IconContact color={"var(--primary-color-dark)"} size={"20px"} />,
+    icon: <IconContact color={"var(--gray-light)"} size={"25px"} />,
   },
 ]
 

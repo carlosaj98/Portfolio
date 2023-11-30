@@ -6,7 +6,7 @@ import NavLinks from "./NavLinks"
 function Navbar() {
   const isMobileScreen = useMediaQuery("(max-width: 600px)")
   return (
-    <NavbarContainer>
+    <NavbarContainer marginBottom={{sm:"24px", xs:"12px"}}>
       {NavLinks.map((link) => {
         return (
           <Link

@@ -5,7 +5,7 @@ function HeroImage({ titleIndex }) {
   return (
     <HeroImageContainer
       className="animate__fadeInRight"
-      width={{lg:"500px" ,md: "400px", xs: "200px" }}
+      width={{lg:"500px" ,md: "400px", xs: "180px" }}
       order={{md:"1", xs:"-1"}}
       id="hero-img-container"
       sx={{

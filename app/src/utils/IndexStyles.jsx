@@ -21,6 +21,15 @@ function IndexStyles() {
 
           "--font-title": "Lexend, sans-serif",
           "--font-text": "Inter, sans-serif",
+
+          "--font-size-XXXL": "80px",
+          "--font-size-XXL": "64px",
+          "--font-size-XL": "48px",
+          "--font-size-L": "32px",
+          "--font-size-M": "24px",
+          "--font-size-S": "18px",
+          "--font-size-XS": "16px",
+          "--font-size-XXS": "14px",
         },
         "*": {
           margin: "0",
@@ -29,7 +38,6 @@ function IndexStyles() {
         },
         html: {
           scrollBehavior: "smooth",
-          scrollSnapType: "y mandatory",
         },
 
         body: {
@@ -41,10 +49,6 @@ function IndexStyles() {
         "#app-container": {
           backgroundColor: "black",
           minHeight: "100vh",
-        },
-        
-        section: {
-          scrollSnapAlign: "start",
         },
       }}
     />

@@ -15,7 +15,7 @@ function HeroTexts({ titleIndex, currentTitle }) {
       <Typography
         variant="h1"
         textAlign={{ md: "left", xs: "center" }}
-        fontSize={{ md: "6rem", xs: "4rem" }}
+        fontSize={{ md: "var(--font-size-XXXL)", xs: "var(--font-size-XL)" }}
       >
         Hi! 👋,
         <br />
@@ -27,7 +27,11 @@ function HeroTexts({ titleIndex, currentTitle }) {
           className="animate__fadeInLeft"
           color="var(--primary-color-light)"
           textAlign={{ md: "left", xs: "center" }}
-          fontSize={{ md: "3.5rem", xs: "2rem" }}
+          fontSize={{
+            lg: "var(--font-size-XXL)",
+            md: "var(--font-size-XL)",
+            xs: "var(--font-size-L)",
+          }}
           sx={{
             textShadow: "0 0 12px var(--primary-color-light)",
           }}
@@ -42,7 +46,11 @@ function HeroTexts({ titleIndex, currentTitle }) {
           className="animate__fadeInLeft"
           color="var(--secondary-color)"
           textAlign={{ md: "left", xs: "center" }}
-          fontSize={{ md: "3.5rem", xs: "2rem" }}
+          fontSize={{
+            lg: "var(--font-size-XXL)",
+            md: "var(--font-size-XL)",
+            xs: "var(--font-size-L)",
+          }}
           sx={{
             textShadow: "0 0 12px var(--secondary-color)",
           }}
@@ -51,7 +59,11 @@ function HeroTexts({ titleIndex, currentTitle }) {
         </Typography>
       )}
 
-      <Typography id="hero-text-desc" textAlign={{ md: "left", xs: "center" }} fontSize={{ md: "1.15rem", xs: "1rem" }}>
+      <Typography
+        id="hero-text-desc"
+        textAlign={{ md: "left", xs: "center" }}
+        fontSize={{ md: "var(--font-size-S)", xs: "var(--font-size-XXS)" }}
+      >
         Versatile professional seamlessly integrating technology and creativity.
         Merging technical expertise with artistic vision to deliver innovative
         solutions. Let's connect to elevate your projects together!
@@ -98,7 +110,7 @@ function HeroTexts({ titleIndex, currentTitle }) {
           className="cv-download"
         >
           Download CV
-          <IconDownload color={"var(--gray)"} size={"1rem"} />
+          <IconDownload color={"var(--gray)"} size={"16px"} />
         </Link>
       </Stack>
     </HeroTextsContainer>

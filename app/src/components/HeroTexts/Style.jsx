@@ -37,6 +37,7 @@ const HeroTextsContainer = styled(Stack)({
     color: "var(--gray)",
     fontFamily: "var(--font-text)",
     fontWeight: "500",
+    fontSize: "var(--font-size-XS)",
     transition:
       "background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease",
     display: "flex",
