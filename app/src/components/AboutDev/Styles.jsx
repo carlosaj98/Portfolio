@@ -2,14 +2,11 @@ import { Stack, styled } from "@mui/material"
 
 const AboutDevContainer = styled(Stack)({
   marginTop:"32px",
-  flexDirection: "row",
   justifyContent:"space-between",
-  gap: "64px",
 
   "#skills-dev-container": {
     width:"100%",
     flexDirection: "row",
-    gap: "24px",
     flexWrap: "wrap",
   },
 
@@ -19,8 +16,6 @@ const AboutDevContainer = styled(Stack)({
     background:
       "linear-gradient(var(--primary-color),var(--primary-color-dark))",
     boxShadow: "0 10px 15px black",
-    width: "100px",
-    padding:"12px",
     borderRadius: "12px",
     border: "2px solid var(--primary-color)",
   },
@@ -37,9 +32,19 @@ const AboutDevContainer = styled(Stack)({
 
   "#dev-title":{
     fontFamily:"var(--font-title)",
-    fontSize:"var(--font-size-M)",
     color:"var(--primary-color-light)",
 
+  },
+
+  "#dev-desc":{
+    fontFamily:"var(--font-text)",
+    lineHeight:"var(--font-size-M)",
+    color:"white",
+  },
+
+  ".divider":{
+    border:"1px solid var(--gray-dark)",
+    order:"1"
   }
 })
 

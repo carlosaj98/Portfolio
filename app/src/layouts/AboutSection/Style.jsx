@@ -21,7 +21,6 @@ const AboutContainer = styled(Stack)({
     fontFamily:"var(--font-title)",
     marginTop:"32px",
     fontWeight:"500",
-    fontSize:"var(--font-size-XL)"
   }
 })
 
