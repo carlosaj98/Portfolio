@@ -5,38 +5,59 @@ import About3DContainer from "./Styles"
 
 function About3D() {
   return (
-    <About3DContainer>
-      <Stack id="text-dev-container" lineHeight={"var(--font-size-M)"}>
-        <Stack>
-          <Box width={"30px"}>
-            <Icon3D color={"var(--secondary-color)"} />
-          </Box>
-          <Typography id="dev-title">As 3D Artist:</Typography>
-        </Stack>
-        As a 3D artist, I bring imagination to life through digital worlds.
-        Using software like Blender or Maya, I sculpt, texture, and animate 3D
-        models, creating captivating visuals. I craft environments, characters,
-        and objects that form the backdrop for games, films, or simulations. My
-        goal is to blend creativity with technical skills to produce immersive
-        and visually stunning experiences.
-      </Stack>
-      <Box border={"1px solid var(--gray-dark)"}></Box>
-      <Stack id="skills-dev-container">
+    <About3DContainer
+      flexDirection={{ md: "row", xs: "column" }}
+      padding={{ md: "0", xs: "0 16px" }}
+      gap={{ md: "64px", xs: "32px" }}
+    >
+      <Stack
+        id="skills-artist-container"
+        order={{ md: "2", xs: "2" }}
+        justifyContent={{ md: "flex-start", xs: "center" }}
+        gap={{ sm: "24px", xs: "12px" }}
+      >
         {Skills.map((skill) => {
           return (
             <Stack
               key={skill.id}
-              className="skill-dev"
+              className="skill-artist"
+              width={{ sm: "100px", xs: "90px" }}
+              padding={{ sm: "12px", xs: "8px" }}
             >
               <Box width={"50px"} height={"50px"}>
                 {skill.icon}
               </Box>
-              <Box fontSize={"12px"} textAlign={"center"} color="black">
+              <Box fontSize={"12px"} textAlign={"center"}>
                 {skill.text}
               </Box>
             </Stack>
           )
         })}
+      </Stack>
+      <Box className="divider"></Box>
+      <Stack id="text-artist-container" order={{ md: "0", xs: "0" }}>
+        <Stack>
+          <Box width={{ sm: "var(--font-size-M)", xs: "var(--font-size-S)" }}>
+            <Icon3D color={"var(--secondary-color)"} />
+          </Box>
+          <Typography
+            id="artist-title"
+            fontSize={{ sm: "var(--font-size-M)", xs: "var(--font-size-S)" }}
+          >
+            As 3D Artist ...
+          </Typography>
+        </Stack>
+        <Typography
+          id="artist-desc"
+          fontSize={{ sm: "var(--font-size-XS)", xs: "var(--font-size-XXS)" }}
+        >
+          As a 3D artist, I bring imagination to life through digital worlds.
+          Using software like Blender or Maya, I sculpt, texture, and animate 3D
+          models, creating captivating visuals. I craft environments,
+          characters, and objects that form the backdrop for games, films, or
+          simulations. My goal is to blend creativity with technical skills to
+          produce immersive and visually stunning experiences.
+        </Typography>
       </Stack>
     </About3DContainer>
   )

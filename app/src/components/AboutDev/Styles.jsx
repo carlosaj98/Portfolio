@@ -1,11 +1,11 @@
 import { Stack, styled } from "@mui/material"
 
 const AboutDevContainer = styled(Stack)({
-  marginTop:"32px",
-  justifyContent:"space-between",
+  marginTop: "32px",
+  justifyContent: "space-between",
 
   "#skills-dev-container": {
-    width:"100%",
+    width: "100%",
     flexDirection: "row",
     flexWrap: "wrap",
   },
@@ -18,34 +18,35 @@ const AboutDevContainer = styled(Stack)({
     boxShadow: "0 10px 15px black",
     borderRadius: "12px",
     border: "2px solid var(--primary-color)",
+    color: "white",
+    fontWeight: "600",
   },
 
   "#text-dev-container": {
-    width:"100%",
-    gap:"24px",
+    width: "100%",
+    gap: "24px",
   },
 
   "#text-dev-container > div": {
-    flexDirection:"row",
-    gap:"16px",
+    flexDirection: "row",
+    gap: "16px",
   },
 
-  "#dev-title":{
-    fontFamily:"var(--font-title)",
-    color:"var(--primary-color-light)",
-
+  "#dev-title": {
+    fontFamily: "var(--font-title)",
+    color: "var(--primary-color-light)",
   },
 
-  "#dev-desc":{
-    fontFamily:"var(--font-text)",
-    lineHeight:"var(--font-size-M)",
-    color:"white",
+  "#dev-desc": {
+    fontFamily: "var(--font-text)",
+    lineHeight: "var(--font-size-M)",
+    color: "white",
   },
 
-  ".divider":{
-    border:"1px solid var(--gray-dark)",
-    order:"1"
-  }
+  ".divider": {
+    border: "1px solid var(--gray-dark)",
+    order: "1",
+  },
 })
 
 export default AboutDevContainer
