@@ -9,19 +9,28 @@ const AboutContainer = styled(Stack)({
   backgroundColor: "black",
 
   "#container": {
-    display:"flex",
-    flexDirection:"column",
+    display: "flex",
+    flexDirection: "column",
     alignItems: "center",
     gap: "24px",
-    height:"100%",
-    marginBottom:"64px"
+    height: "100%",
+    marginBottom: "64px",
+    transition:"all 0.5s ease"
   },
 
-  "#about-title":{
-    fontFamily:"var(--font-title)",
-    marginTop:"32px",
-    fontWeight:"500",
-  }
+  "#about-title": {
+    fontFamily: "var(--font-title)",
+    marginTop: "32px",
+    fontWeight: "500",
+  },
+
+  ".animate__fadeInLeft":{
+    animationDuration:"0.75s"
+  },
+
+  ".animate__fadeOutLeft":{
+    animationDuration:"0.75s"
+  },
 })
 
 export default AboutContainer

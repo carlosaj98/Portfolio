@@ -4,6 +4,7 @@ import Skills from "./Skills"
 import AboutDevContainer from "./Styles"
 
 function AboutDev() {
+  
   return (
     <AboutDevContainer
       flexDirection={{ md: "row", xs: "column" }}
