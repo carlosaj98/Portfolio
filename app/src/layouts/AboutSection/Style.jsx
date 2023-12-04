@@ -23,14 +23,6 @@ const AboutContainer = styled(Stack)({
     marginTop: "32px",
     fontWeight: "500",
   },
-
-  ".animate__fadeInLeft":{
-    animationDuration:"0.75s"
-  },
-
-  ".animate__fadeOutLeft":{
-    animationDuration:"0.75s"
-  },
 })
 
 export default AboutContainer
