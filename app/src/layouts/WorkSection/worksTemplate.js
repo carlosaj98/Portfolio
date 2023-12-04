@@ -43,7 +43,9 @@ const artistTemplate = [
       "This is one of my favorite characters that I made throughout my studies at Animum Creativity Advanced School.",
     link: "https://www.artstation.com/artwork/Ar9EVN",
   },
+]
 
+const developerTemplate = [
   {
     id: "work-dev-cuphead",
     image: "/works-images/work-dev-cuphead.jpg",
@@ -75,4 +77,4 @@ const artistTemplate = [
   },
 ]
 
-export { artistTemplate }
+export { artistTemplate, developerTemplate }

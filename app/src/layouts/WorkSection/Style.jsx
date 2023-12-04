@@ -1,9 +1,8 @@
 import { Stack, styled } from "@mui/material";
 
 const WorkSectionContainer = styled(Stack)({
-  minHeight:"100vh",
-  background:"radial-gradient(circle at bottom right , var(--primary-color-light) -200%, black 90%)",
-
+  height:"100%",
+  
 
   "#container":{
     display:"flex",
@@ -24,7 +23,8 @@ const WorkSectionContainer = styled(Stack)({
   "#btn-works-container":{
     flexDirection:"row",
     gap:"32px"
-  }
+  },
+
 })
 
 export default WorkSectionContainer
