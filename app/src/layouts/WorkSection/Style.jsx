@@ -2,7 +2,7 @@ import { Stack, styled } from "@mui/material";
 
 const WorkSectionContainer = styled(Stack)({
   minHeight:"100vh",
-  background:"radial-gradient(circle at bottom , var(--primary-color-light) -200%, black 90%)",
+  background:"radial-gradient(circle at bottom right , var(--primary-color-light) -200%, black 90%)",
 
   "#container":{
     display:"flex",

@@ -1,31 +1,54 @@
 import { Stack, styled } from "@mui/material"
 
 const CardWorksContainer = styled(Stack)({
-  maxWidth:"350px",
-  borderRadius:"12px",
-  overflow:"hidden",
-  boxShadow:"0 5px 10px black",
-  padding:"12px",
-  backgroundColor:"rgba(255,255,255,0.1)",
-  border:"2px solid var(--gray-dark)",
+  maxWidth: "350px",
+  borderRadius: "12px",
+  overflow: "hidden",
+  boxShadow: "0 5px 10px black",
+  padding: "24px",
+  gap: "12px",
+  backgroundColor: "rgba(255,255,255,0.1)",
+  border: "2px solid var(--gray-dark)",
 
-  ".work-content-container":{
-    gap:"12px"
+  ".work-content-container": {
+    gap: "12px",
   },
 
-  ".work-title":{
-    fontFamily:"var(--font-title)",
-    fontSize:"var(--font-size-M)",
-    textAlign:"center",
-    color:"var(--secondary-color)"
+  ".work-title": {
+    fontFamily: "var(--font-title)",
+    fontSize: "var(--font-size-M)",
+    textAlign: "center",
+    color: "var(--secondary-color)",
   },
 
-  ".work-desc":{
-    fontFamily:"var(--font-text)",
-    fontSize:"var(--font-size-XXS)",
-    textAlign:"center",
-    color:"white"
-  }
+  ".work-desc": {
+    fontFamily: "var(--font-text)",
+    fontSize: "var(--font-size-XXS)",
+    textAlign: "center",
+    color: "white",
+    flexGrow: "1",
+  },
+
+  ".work-links": {
+    flexDirection: "row",
+    gap: "24px",
+    justifyContent: "center",
+  },
+
+  ".work-links a": {
+    textDecoration: "none",
+    fontFamily: "var(--font-title)",
+    color: "black",
+    padding: "6px 12px",
+    borderRadius: "12px",
+    backgroundColor: "var(--secondary-color)",
+  },
+
+  img: {
+    borderRadius: "12px",
+    width: "100%",
+    height: "100%",
+  },
 })
 
 export default CardWorksContainer

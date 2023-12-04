@@ -1,6 +1,7 @@
 import { Typography, Container, Stack, Button } from "@mui/material"
 import { CardWorks } from "../../components"
 import WorkSectionContainer from "./Style"
+import { artistTemplate } from "./worksTemplate"
 
 function WorkSection() {
   return (
@@ -13,12 +14,24 @@ function WorkSection() {
           <Button variant="contained">Dev Works</Button>
           <Button variant="contained">3D Works</Button>
         </Stack>
-        <Stack alignItems={"center"} justifyContent={"center"} gap={"24px"} flexDirection={"row"} flexWrap={"wrap"}>
-          <CardWorks />
-          <CardWorks />
-          <CardWorks />
-          <CardWorks />
-          <CardWorks />
+        <Stack
+          justifyContent={"center"}
+          gap={"24px"}
+          flexDirection={"row"}
+          flexWrap={"wrap"}
+        >
+          {artistTemplate.map((work) => {
+            return (
+              <CardWorks
+                key={work.id}
+                image={work.image}
+                title={work.title}
+                description={work.description}
+                link={work.link}
+                linkGit={work.linkGit ? work.linkGit : ""}
+              />
+            )
+          })}
         </Stack>
       </Container>
     </WorkSectionContainer>
