@@ -4,12 +4,14 @@ const WorkSectionContainer = styled(Stack)({
   minHeight:"100vh",
   background:"radial-gradient(circle at bottom right , var(--primary-color-light) -200%, black 90%)",
 
+
   "#container":{
     display:"flex",
     height:"100%",
     alignItems:"center",
     flexDirection:"column",
-    gap:"32px"
+    gap:"32px",
+    marginBottom:"64px",
   },
 
   h3:{
