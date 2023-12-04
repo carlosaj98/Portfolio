@@ -4,8 +4,8 @@ const AboutContainer = styled(Stack)({
   height: "100%",
   color: "white",
   alignItems: "center",
-  background: `radial-gradient(ellipse at top left, var(--primary-color-light) -200%, transparent 70%), 
-    radial-gradient(ellipse at bottom right, var(--secondary-color) -200%, transparent 70%)`,
+  background: `radial-gradient(circle at top left, var(--primary-color-light) -200%, transparent 70%), 
+    radial-gradient(circle at bottom right, var(--secondary-color) -200%, transparent 70%)`,
   backgroundColor: "black",
 
   "#container": {
