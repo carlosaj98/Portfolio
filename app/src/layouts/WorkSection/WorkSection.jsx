@@ -2,7 +2,7 @@ import { Typography, Container, Stack, Button } from "@mui/material"
 import { DeveloperButton, ArtistButton } from "../../common/Buttons/Buttons"
 import { CardWorks } from "../../components"
 import WorkSectionContainer from "./Style"
-import { artistTemplate, developerTemplate } from "./worksTemplate"
+import worksTemplate from "./worksTemplate"
 import { useState } from "react"
 
 function WorkSection() {
@@ -43,30 +43,18 @@ function WorkSection() {
           flexDirection={"row"}
           flexWrap={"wrap"}
         >
-          {currentWork === "artist"
-            ? artistTemplate.map((work) => {
-                return (
-                  <CardWorks
-                    key={work.id}
-                    image={work.image}
-                    title={work.title}
-                    description={work.description}
-                    link={work.link}
-                  />
-                )
-              })
-            : developerTemplate.map((work) => {
-                return (
-                  <CardWorks
-                    key={work.id}
-                    image={work.image}
-                    title={work.title}
-                    description={work.description}
-                    link={work.link}
-                    linkGit={work.linkGit}
-                  />
-                )
-              })}
+          {worksTemplate[currentWork].map((work) => {
+            return (
+              <CardWorks
+                key={work.id}
+                image={work.image}
+                title={work.title}
+                description={work.description}
+                link={work.link}
+                linkGit={work.linkGit || ""}
+              />
+            )
+          })}
         </Stack>
       </Container>
     </WorkSectionContainer>

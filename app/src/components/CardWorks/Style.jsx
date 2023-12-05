@@ -18,6 +18,13 @@ const CardWorksContainer = styled(Stack)({
     fontFamily: "var(--font-title)",
     fontSize: "var(--font-size-M)",
     textAlign: "center",
+  },
+
+  ".variant-dev": {
+    color: "var(--primary-color-light)",
+  },
+
+  ".variant-artist": {
     color: "var(--secondary-color)",
   },
 
@@ -31,7 +38,7 @@ const CardWorksContainer = styled(Stack)({
 
   ".work-links": {
     flexDirection: "row",
-    gap: "24px",
+    gap: "32px",
     justifyContent: "center",
   },
 
@@ -39,9 +46,28 @@ const CardWorksContainer = styled(Stack)({
     textDecoration: "none",
     fontFamily: "var(--font-title)",
     color: "black",
-    padding: "6px 12px",
     borderRadius: "12px",
-    backgroundColor: "var(--secondary-color)",
+    width: "30px",
+  },
+
+  "a.variant-dev": {
+    svg: { transition: "all 0.25s ease" },
+    "&:hover": {
+      svg: {
+        fill: "var(--primary-color-light)",
+        transform: "scale(1.2)",
+      },
+    },
+  },
+
+  "a.variant-artist": {
+    svg: { transition: "all 0.25s ease" },
+    "&:hover": {
+      svg: {
+        fill: "var(--secondary-color)",
+        transform: "scale(1.2)",
+      },
+    },
   },
 
   img: {
