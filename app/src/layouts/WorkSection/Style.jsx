@@ -16,8 +16,8 @@ const WorkSectionContainer = styled(Stack)({
   h3:{
     color:"white",
     fontFamily:"var(--font-title)",
-    fontSize:"var(--font-size-XL)",
     marginTop:"32px",
+    textAlign:"center"
   },
 
   "#btn-works-container":{

@@ -1,11 +1,9 @@
 import { Stack, styled } from "@mui/material"
 
 const CardWorksContainer = styled(Stack)({
-  maxWidth: "350px",
   borderRadius: "12px",
   overflow: "hidden",
   boxShadow: "0 5px 10px black",
-  padding: "24px",
   gap: "12px",
   backgroundColor: "rgba(255,255,255,0.1)",
   border: "2px solid var(--gray-dark)",
@@ -74,6 +72,7 @@ const CardWorksContainer = styled(Stack)({
     borderRadius: "12px",
     width: "100%",
     height: "100%",
+    objectFit: "cover",
   },
 })
 

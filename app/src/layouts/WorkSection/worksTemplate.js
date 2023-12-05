@@ -62,7 +62,7 @@ const worksTemplate = {
       image: "/works-images/work-dev-cultural.jpg",
       title: "Web App for CulturalFit",
       description:
-        "Created a Cuphead-inspired game employing object-oriented programming for structure and DOM manipulation for dynamic gameplay updates.",
+        "Web application created for the company CulturalFit with the objective of developing a test aimed at B2B",
       link: "https://culturalfit-desafio.onrender.com",
       linkGit: "https://github.com/carlosaj98/desafioBootcamp",
     },
@@ -72,7 +72,7 @@ const worksTemplate = {
       image: "/works-images/work-dev-feedback.jpg",
       title: "MERN Full Stack App",
       description:
-        "Developed a secure Single Page Application using the MERN stack.",
+        "This personal project consists of the creation of a Full Stack SPA (Single Page Application) which is based on a social network for business projects.",
       link: "https://productfeedback-carlosalvarez.onrender.com/",
       linkGit: "https://github.com/carlosaj98/Project-ProductFeedback",
     },

@@ -20,7 +20,7 @@ function WorkSection() {
       }}
     >
       <Container id="container">
-        <Typography id="work-title" variant="h3">
+        <Typography id="work-title" variant="h3" fontSize={{sm:"var(--font-size-XL)", xs:"var(--font-size-L)"}}>
           These are my creations
         </Typography>
         <Stack id="btn-works-container">

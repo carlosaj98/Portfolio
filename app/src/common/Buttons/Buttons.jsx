@@ -4,10 +4,8 @@ const CustomButton = styled(Button)({
   textTransform: "none",
   color: "var(--gray)",
   fontFamily: "var(--font-text)",
-  fontSize: "var(--font-size-XS)",
   borderRadius: "12px",
   padding: "6px 12px",
-
   "&:hover": {
     backgroundColor: "var(--gray-light)",
     border: "2px solid transparent",
@@ -26,6 +24,7 @@ function DeveloperButton({ text, variant, action }) {
             ? "2px solid var(--primary-color-light)"
             : "2px solid var(--gray)",
         color: variant === "developer" && "white",
+        fontSize: { md: "var(--font-size-XS)", xs: "var(--font-size-XXS)" },
         boxShadow:
           variant === "developer" && "0 0 30px var(--primary-color-light)",
         transition: "all 0.3s ease-out",
@@ -46,6 +45,7 @@ function ArtistButton({ text, variant, action }) {
             ? "2px solid var(--secondary-color)"
             : "2px solid var(--gray)",
         color: variant === "artist" && "white",
+        fontSize: { md: "var(--font-size-XS)", xs: "var(--font-size-XXS)" },
         boxShadow: variant === "artist" && "0 0 30px var(--secondary-color)",
         transition: "all 0.3s ease-out",
       }}

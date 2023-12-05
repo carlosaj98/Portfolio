@@ -6,9 +6,13 @@ function CardWorks({ image, title, description, link, linkGit }) {
   linkGit ? (variant = "variant-dev") : (variant = "variant-artist")
 
   return (
-    <CardWorksContainer>
-      <Box width={"100%"} height="200px" className="work-img-container">
-        <img src={image} style={{ objectFit: "cover" }} />
+    <CardWorksContainer sx={{ maxWidth: { md: "350px", xs: "300px" }, padding:{sm:"24px", xs:"12px"} }}>
+      <Box
+        width={"100%"}
+        height={{ sm: "200px", xs: "150px" }}
+        className="work-img-container"
+      >
+        <img src={image} />
       </Box>
       <Stack flexGrow={"1"} className="work-content-container">
         <Typography className={`work-title ${variant}`}>{title}</Typography>
