@@ -4,7 +4,7 @@ const WorkSectionContainer = styled(Stack)({
   height:"100%",
   
 
-  "#container":{
+  ".container":{
     display:"flex",
     height:"100%",
     alignItems:"center",

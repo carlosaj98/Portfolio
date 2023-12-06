@@ -5,7 +5,7 @@ import { AboutDev, About3D } from "../../components"
 function AboutSection() {
   return (
     <AboutContainer component={"section"} id="about-section">
-      <Container id="container">
+      <Container className="container">
         <Typography
           variant="h3"
           id="about-title"

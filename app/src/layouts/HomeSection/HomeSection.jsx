@@ -20,7 +20,7 @@ function HomeSection() {
   return (
     <HomeContainer component="section" id="home-section">
       <Container
-        id="container"
+        className="container"
         sx={{
           flexDirection: { md: "row", xs: "column" },
           padding: { md: "0px 24px", xs: "0px 16px" },

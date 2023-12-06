@@ -19,7 +19,7 @@ function WorkSection() {
             : "radial-gradient(circle at bottom left , var(--secondary-color) -200%, black 90%)",
       }}
     >
-      <Container id="container">
+      <Container className="container">
         <Typography id="work-title" variant="h3" fontSize={{sm:"var(--font-size-XL)", xs:"var(--font-size-L)"}}>
           These are my creations
         </Typography>

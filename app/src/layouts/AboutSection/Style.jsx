@@ -8,7 +8,7 @@ const AboutContainer = styled(Stack)({
     radial-gradient(circle at bottom right, var(--secondary-color) -200%, transparent 70%)`,
   backgroundColor: "black",
 
-  "#container": {
+  ".container": {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",

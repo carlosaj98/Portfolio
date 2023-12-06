@@ -17,11 +17,6 @@ const NavLinks = [
     icon: <IconWorks color={"var(--gray-light)"} size={"25px"} />,
   },
   {
-    title: "Background",
-    id: "background-section",
-    icon: <IconBackground color={"var(--gray-light)"} size={"25px"} />,
-  },
-  {
     title: "Contact",
     id: "contact-section",
     icon: <IconContact color={"var(--gray-light)"} size={"25px"} />,

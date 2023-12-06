@@ -6,7 +6,7 @@ const HomeContainer = styled(Stack)({
   radial-gradient(circle at bottom, var(--primary-color-light) -200%, var(--hero-bg-color) 70%)
   `,
 
-  "#container": {
+  ".container": {
     display: "flex",
     height: "100%",
     alignItems: "center",
