@@ -4,6 +4,7 @@ import {
   HomeSection,
   AboutSection,
   WorkSection,
+  ContactSection,
 } from "./layouts"
 import "animate.css"
 
@@ -15,6 +16,7 @@ function App() {
         <HomeSection />
         <AboutSection />
         <WorkSection />
+        <ContactSection />
       </Stack>
     </Stack>
   )
