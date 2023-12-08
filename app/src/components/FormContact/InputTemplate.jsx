@@ -9,6 +9,7 @@ function InputTemplate({ field, errors, name, rest }) {
       error={!!errors[name]}
       helperText={errors[name]?.message || ""}
       fullWidth
+      autoComplete="off"
       InputProps={{
         sx: {
           color: "white",
@@ -17,7 +18,6 @@ function InputTemplate({ field, errors, name, rest }) {
         },
       }}
       FormHelperTextProps={{ className: "custom-error-text" }}
-      
       sx={{
         "& .MuiInputBase-root, .MuiInputBase-multiline": {
           "& fieldset": {
