@@ -7,26 +7,28 @@ function InputTemplate({ field, errors, name, rest }) {
       {...rest}
       label=""
       error={!!errors[name]}
-      helperText={
-        <p className="custom-error-text">{errors[name]?.message || ""}</p>
-      }
+      helperText={errors[name]?.message || ""}
+      fullWidth
       InputProps={{
         sx: {
           color: "white",
           fontFamily: "var(--font-text)",
+          fontSize: "var(--font-size-XS)",
         },
       }}
+      FormHelperTextProps={{ className: "custom-error-text" }}
+      
       sx={{
         "& .MuiInputBase-root, .MuiInputBase-multiline": {
           "& fieldset": {
             transition: "all 0.3s ease-out",
-            border: "2px solid var(--gray)",
+            border: "2px solid transparent",
             borderRadius: "12px",
             backgroundColor: "var(--gray-dark)",
-            zIndex: "0",
           },
           "&:hover fieldset": {
             border: "2px solid white",
+            boxShadow: "0 0 10px white",
           },
           "&.Mui-focused fieldset": {
             boxShadow: "0 0 10px var(--primary-color-light)",

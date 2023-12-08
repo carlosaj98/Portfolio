@@ -54,4 +54,15 @@ function ArtistButton({ text, variant, action }) {
     </CustomButton>
   )
 }
-export { DeveloperButton, ArtistButton }
+
+function SubmitButton({ text }) {
+  return (
+    <CustomButton
+      type="submit"
+      sx={{ border: "2px solid var(--gray)", fontSize: "var(--font-size-XS)" }}
+    >
+      {text}
+    </CustomButton>
+  )
+}
+export { DeveloperButton, ArtistButton, SubmitButton }

@@ -1,8 +1,9 @@
-import { TextField } from "@mui/material"
+import { Box } from "@mui/material"
 import FormContactContainer from "./Style"
 import { useForm, Controller } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
 import InputTemplate from "./InputTemplate"
+import { SubmitButton } from "../../common/Buttons/Buttons"
 
 function FormContact({ fields, validation }) {
   const {
@@ -30,7 +31,9 @@ function FormContact({ fields, validation }) {
           )}
         />
       ))}
-      <button type="submit">Submit</button>
+      <Box>
+        <SubmitButton text={"Send a message"} />
+      </Box>
     </FormContactContainer>
   )
 }
