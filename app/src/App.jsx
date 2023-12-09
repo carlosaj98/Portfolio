@@ -8,6 +8,7 @@ import {
 } from "./layouts"
 import "animate.css"
 
+
 function App() {
   return (
     <Stack id="app-container" alignItems={"center"}>

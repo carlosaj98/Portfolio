@@ -40,7 +40,14 @@ function ArtistButton({ text, variant, action }) {
     <CustomButton
       onClick={() => action("artist")}
       sx={{
+        border:
+          variant === "artist"
+            ? "2px solid var(--secondary-color)"
+            : "2px solid var(--gray)",
+        color: variant === "artist" && "white",
         fontSize: { md: "var(--font-size-XS)", xs: "var(--font-size-XXS)" },
+        boxShadow:
+          variant === "artist" && "0 0 30px var(--secondary-color)",
         transition: "all 0.3s ease-out",
       }}
     >
