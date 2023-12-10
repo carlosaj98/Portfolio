@@ -15,13 +15,11 @@ const HomeContainer = styled(Stack)({
   },
 
   ".animate__fadeInLeft": {
-    animationDuration: "0.75s",
-    animationDelay: "0s",
+    animationDuration: "0.6s",
   },
 
   ".animate__fadeInRight": {
-    animationDuration: "0.75s",
-    animationDelay: "0s",
+    animationDuration: "0.6s",
   },
 })
 

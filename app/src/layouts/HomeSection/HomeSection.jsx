@@ -10,7 +10,7 @@ function HomeSection() {
     setTimeout(() => {
       const interval = setInterval(() => {
         setCurrentTitleIndex((prevIndex) => (prevIndex + 1) % heroTitles.length)
-      }, 2000)
+      }, 2500)
       return () => clearInterval(interval)
     }, 1000)
   }, [heroTitles.length])
