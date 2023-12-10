@@ -21,7 +21,7 @@ function HeroImage({ titleIndex }) {
         overflow: "hidden",
       }}
     >
-      <img src="/profile-image.png" />
+      <img src="/profile-image.png" alt="profile image"/>
     </HeroImageContainer>
   )
 }

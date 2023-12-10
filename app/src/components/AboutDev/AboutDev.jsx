@@ -4,7 +4,6 @@ import Skills from "./Skills"
 import AboutDevContainer from "./Styles"
 
 function AboutDev() {
-  
   return (
     <AboutDevContainer
       flexDirection={{ md: "row", xs: "column" }}
@@ -45,7 +44,7 @@ function AboutDev() {
             id="dev-title"
             fontSize={{ sm: "var(--font-size-M)", xs: "var(--font-size-S)" }}
           >
-            As Frontend Developer ...
+            Full Stack Developer
           </Typography>
         </Stack>
         <Typography

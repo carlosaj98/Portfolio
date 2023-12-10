@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { HeroTexts, HeroImage } from "../../components"
 
 function HomeSection() {
-  const heroTitles = ["Frontend Developer", "3D Artist"]
+  const heroTitles = ["Full Stack Developer", "3D Artist"]
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0)
   useEffect(() => {
     setTimeout(() => {

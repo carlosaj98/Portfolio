@@ -12,7 +12,7 @@ function CardWorks({ image, title, description, link, linkGit }) {
         height={{ sm: "200px", xs: "150px" }}
         className="work-img-container"
       >
-        <img src={image} />
+        <img src={image} alt={title}/>
       </Box>
       <Stack flexGrow={"1"} className="work-content-container">
         <Typography className={`work-title ${variant}`}>{title}</Typography>

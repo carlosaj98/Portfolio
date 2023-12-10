@@ -44,7 +44,7 @@ function About3D() {
             id="artist-title"
             fontSize={{ sm: "var(--font-size-M)", xs: "var(--font-size-S)" }}
           >
-            As 3D Artist ...
+            3D Artist
           </Typography>
         </Stack>
         <Typography
