@@ -4,14 +4,17 @@ import { CardWorks } from "../../components"
 import WorkSectionContainer from "./Style"
 import worksTemplate from "./worksTemplate"
 import { useState } from "react"
+import useReveal from "../../hooks/useReveal"
 
 function WorkSection() {
   const [currentWork, setCurrentWork] = useState("developer")
+  const { isVisible, sectionRef } = useReveal()
 
   const handleClick = (current) => setCurrentWork(current)
   return (
     <WorkSectionContainer
       id="works-section"
+      ref={sectionRef}
       sx={{
         background:
           currentWork === "developer"
@@ -19,8 +22,12 @@ function WorkSection() {
             : "radial-gradient(circle at bottom left , var(--secondary-color) -200%, black 90%)",
       }}
     >
-      <Container className="container">
-        <Typography id="work-title" variant="h3" fontSize={{sm:"var(--font-size-XL)", xs:"var(--font-size-L)"}}>
+      <Container className="container" sx={{ opacity: isVisible ? "1" : "0" }}>
+        <Typography
+          id="work-title"
+          variant="h3"
+          fontSize={{ sm: "var(--font-size-XL)", xs: "var(--font-size-L)" }}
+        >
           These are my creations
         </Typography>
         <Stack id="btn-works-container">

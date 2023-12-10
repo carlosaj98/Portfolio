@@ -15,13 +15,18 @@ const AboutContainer = styled(Stack)({
     gap: "24px",
     height: "100%",
     marginBottom: "64px",
-    transition:"all 0.5s ease"
+    transition: "opacity 0.5s ease-in-out",
   },
 
   "#about-title": {
     fontFamily: "var(--font-title)",
     marginTop: "32px",
     fontWeight: "500",
+  },
+
+  ".animate__fadeInLeft, animate__fadeOut": {
+    animationTimingFunction: "ease-out",
+    animationDuration: "0.5s",
   },
 })
 

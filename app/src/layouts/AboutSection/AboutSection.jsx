@@ -1,11 +1,16 @@
 import { Container, Stack, Typography } from "@mui/material"
 import AboutContainer from "./Style"
 import { AboutDev, About3D } from "../../components"
+import useReveal from "../../hooks/useReveal"
 
 function AboutSection() {
+  const { isVisible, sectionRef } = useReveal()
   return (
-    <AboutContainer component={"section"} id="about-section">
-      <Container className="container">
+    <AboutContainer component={"section"} id="about-section" ref={sectionRef}>
+      <Container
+        className="container"
+        sx={{ opacity: isVisible ? "1" : "0" }}
+      >
         <Typography
           variant="h3"
           id="about-title"

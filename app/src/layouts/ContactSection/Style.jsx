@@ -7,7 +7,8 @@ const ContactSectionContainer = styled(Stack)({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    marginBottom:"128px"
+    marginBottom:"128px",
+    transition: "opacity 0.5s ease-in-out",
   },
 
   h3: {
