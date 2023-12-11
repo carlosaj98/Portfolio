@@ -36,7 +36,7 @@ function AboutDev() {
       </Stack>
       <Box className="divider"></Box>
       <Stack id="text-dev-container" order={{ md: "2", xs: "0" }}>
-        <Stack>
+        <Stack id="dev-title-container">
           <Box width={{ sm: "var(--font-size-M)", xs: "var(--font-size-S)" }}>
             <IconDev color={"var(--primary-color-light)"} />
           </Box>
@@ -47,20 +47,27 @@ function AboutDev() {
             Full Stack Developer
           </Typography>
         </Stack>
-        <Typography
-          id="dev-desc"
-          fontSize={{ sm: "var(--font-size-XS)", xs: "var(--font-size-XXS)" }}
-        >
-          As a frontend developer, my main focus is turning design concepts into
-          functional code. I create user interfaces using HTML, CSS, and
-          JavaScript, ensuring a seamless experience across devices and
-          browsers.
-          <br />
-          As a backend developer, I handle server-side tasks, managing
-          databases, server logic, and overall application architecture. My
-          focus is on ensuring efficient data processing and supporting frontend
-          functionalities.
-        </Typography>
+        <Stack className="dev-desc-container">
+          <Typography
+            className="dev-desc"
+            fontSize={{ sm: "var(--font-size-XS)", xs: "var(--font-size-XXS)" }}
+          >
+            As a Full Stack Developer specializing in MERN, I focus on building
+            captivating user interfaces using React.js, HTML, CSS, and
+            JavaScript. I craft responsive designs that ensure an engaging and
+            seamless user experience across various devices.
+          </Typography>
+          <Typography
+            className="dev-desc"
+            fontSize={{ sm: "var(--font-size-XS)", xs: "var(--font-size-XXS)" }}
+          >
+            On the backend, I utilize Node.js and Express.js to construct the
+            server-side logic, manage databases like MongoDB, and establish APIs
+            for efficient data flow between the server and frontend. Ensuring
+            robust security measures is also part of my role to safeguard data
+            integrity and user privacy.
+          </Typography>
+        </Stack>
       </Stack>
     </AboutDevContainer>
   )

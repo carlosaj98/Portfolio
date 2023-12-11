@@ -27,7 +27,7 @@ const AboutDevContainer = styled(Stack)({
     gap: "24px",
   },
 
-  "#text-dev-container > div": {
+  "#dev-title-container": {
     flexDirection: "row",
     gap: "16px",
   },
@@ -37,7 +37,11 @@ const AboutDevContainer = styled(Stack)({
     color: "var(--primary-color-light)",
   },
 
-  "#dev-desc": {
+  ".dev-desc-container": {
+      gap:"16px",
+  },
+
+  ".dev-desc": {
     fontFamily: "var(--font-text)",
     lineHeight: "var(--font-size-M)",
     color: "white",

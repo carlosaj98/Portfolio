@@ -52,11 +52,12 @@ function About3D() {
           fontSize={{ sm: "var(--font-size-XS)", xs: "var(--font-size-XXS)" }}
         >
           As a 3D artist, I bring imagination to life through digital worlds.
-          Using software like Blender or Maya, I sculpt, texture, and animate 3D
-          models, creating captivating visuals. I craft environments,
-          characters, and objects that form the backdrop for games, films, or
-          simulations. My goal is to blend creativity with technical skills to
-          produce immersive and visually stunning experiences.
+          Using software like Blender, Maya, or Zbrush among others, I sculpt,
+          texture, and render 3D models, creating captivating visuals. I craft
+          environments, characters, and objects that form the backdrop for
+          games, films, or simulations. My goal is to blend creativity with
+          technical skills to produce immersive and visually stunning
+          experiences.
         </Typography>
       </Stack>
     </About3DContainer>

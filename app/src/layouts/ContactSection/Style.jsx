@@ -14,7 +14,6 @@ const ContactSectionContainer = styled(Stack)({
   h3: {
     color: "white",
     fontFamily: "var(--font-title)",
-    fontSize: "var(--font-size-XL)",
     marginTop: "32px",
   },
 })
