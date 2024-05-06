@@ -48,15 +48,14 @@ const worksTemplate = {
 
   developer: [
     {
-      id: "work-dev-cuphead",
-      image: "/works-images/work-dev-cuphead.jpg",
-      title: "JavaScript Game",
+      id: "work-dev-feedback",
+      image: "/works-images/work-dev-feedback.jpg",
+      title: "MERN Full Stack App",
       description:
-        "Created a Cuphead-inspired game employing object-oriented programming for structure and DOM manipulation for dynamic gameplay updates.",
-      link: "https://cuphead-gameproject.onrender.com",
-      linkGit: "https://github.com/carlosaj98/Cuphead_gameProject",
+        "This personal project consists of the creation of a Full Stack SPA (Single Page Application) which is based on a social network for business projects.",
+      link: "https://productfeedback-carlosalvarez.onrender.com/",
+      linkGit: "https://github.com/carlosaj98/Project-ProductFeedback",
     },
-
     {
       id: "work-dev-cultural",
       image: "/works-images/work-dev-cultural.jpg",
@@ -66,15 +65,14 @@ const worksTemplate = {
       link: "https://culturalfit-desafio.onrender.com",
       linkGit: "https://github.com/carlosaj98/desafioBootcamp",
     },
-
     {
-      id: "work-dev-feedback",
-      image: "/works-images/work-dev-feedback.jpg",
-      title: "MERN Full Stack App",
+      id: "work-dev-cuphead",
+      image: "/works-images/work-dev-cuphead.jpg",
+      title: "JavaScript Game",
       description:
-        "This personal project consists of the creation of a Full Stack SPA (Single Page Application) which is based on a social network for business projects.",
-      link: "https://productfeedback-carlosalvarez.onrender.com/",
-      linkGit: "https://github.com/carlosaj98/Project-ProductFeedback",
+        "Created a Cuphead-inspired game employing object-oriented programming for structure and DOM manipulation for dynamic gameplay updates.",
+      link: "https://cuphead-gameproject.onrender.com",
+      linkGit: "https://github.com/carlosaj98/Cuphead_gameProject",
     },
   ],
 }
