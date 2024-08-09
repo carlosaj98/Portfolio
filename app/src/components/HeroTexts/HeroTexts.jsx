@@ -11,7 +11,10 @@ import HeroTextsContainer from "./Style"
 
 function HeroTexts({ titleIndex, currentTitle }) {
   return (
-    <HeroTextsContainer className="text-intro-container animate__fadeInLeft" alignItems={{md:"flex-start", xs:"center"}}>
+    <HeroTextsContainer
+      className="text-intro-container animate__fadeInLeft"
+      alignItems={{ md: "flex-start", xs: "center" }}
+    >
       <Typography
         variant="h1"
         textAlign={{ md: "left", xs: "center" }}
@@ -64,9 +67,10 @@ function HeroTexts({ titleIndex, currentTitle }) {
         textAlign={{ md: "left", xs: "center" }}
         fontSize={{ md: "var(--font-size-S)", xs: "var(--font-size-XXS)" }}
       >
-        Versatile professional seamlessly integrating technology and creativity.
-        Merging technical expertise with artistic vision to deliver innovative
-        solutions. Let's connect to elevate your projects together!
+        I create robust, scalable web applications with
+        seamless user experiences, integrating 3D design to deliver visually
+        impactful solutions. If you`re looking for a versatile professional to
+        bring your ideas to life, feel free to reach out.
       </Typography>
       <Stack
         id="social-media-links"

@@ -1,4 +1,4 @@
-import { Box, Stack, Typography, Container, Link } from "@mui/material"
+import {  Container } from "@mui/material"
 import HomeContainer from "./Style"
 import { useState, useEffect } from "react"
 import { HeroTexts, HeroImage } from "../../components"
