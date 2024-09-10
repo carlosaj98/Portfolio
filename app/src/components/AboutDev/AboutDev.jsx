@@ -44,7 +44,7 @@ function AboutDev() {
             id="dev-title"
             fontSize={{ sm: "var(--font-size-M)", xs: "var(--font-size-S)" }}
           >
-            Full Stack Developer
+            Frontend Developer
           </Typography>
         </Stack>
         <Stack className="dev-desc-container">
@@ -52,16 +52,16 @@ function AboutDev() {
             className="dev-desc"
             fontSize={{ sm: "var(--font-size-XS)", xs: "var(--font-size-XXS)" }}
           >
-            As a Full Stack Developer specializing in MERN, I focus on building
-            captivating user interfaces using React.js, HTML, CSS, and
-            JavaScript. I craft responsive designs that ensure an engaging and
-            seamless user experience across various devices.
+            As a Frontend Developer specializing in MERN, I focus on building
+            captivating user interfaces using React.js, HTML, CSS, JavaScript
+            and TypeScript. I craft responsive designs that ensure an engaging
+            and seamless user experience across various devices.
           </Typography>
           <Typography
             className="dev-desc"
             fontSize={{ sm: "var(--font-size-XS)", xs: "var(--font-size-XXS)" }}
           >
-            On the backend, I utilize Node.js and Express.js to construct the
+            I also use Node.js and Express.js to construct the
             server-side logic, manage databases like MongoDB, and establish APIs
             for efficient data flow between the server and frontend. Ensuring
             robust security measures is also part of my role to safeguard data
