@@ -67,7 +67,7 @@ function HeroTexts({ titleIndex, currentTitle }) {
         textAlign={{ md: "left", xs: "center" }}
         fontSize={{ md: "var(--font-size-S)", xs: "var(--font-size-XXS)" }}
       >
-        I create robust, scalable web applications with
+        I create web applications and pages with
         seamless user experiences, integrating 3D design to deliver visually
         impactful solutions. If you`re looking for a versatile professional to
         bring your ideas to life, feel free to reach out.
