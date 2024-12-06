@@ -1,4 +1,5 @@
-import { Box, Stack, Typography, Link } from "@mui/material"
+/* eslint-disable react/prop-types */
+import { Stack, Typography, Link } from "@mui/material"
 
 import {
   IconLinkedin,

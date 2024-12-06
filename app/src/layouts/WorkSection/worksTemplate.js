@@ -48,6 +48,15 @@ const worksTemplate = {
 
   developer: [
     {
+      id: "work-dev-flights",
+      image: "/works-images/work-dev-flights.jpg",
+      title: "Air Tracker Web App",
+      description:
+        "Air Tracker is a real-time flight and airport tracking application featuring stunning 3D visualizations. This project allows users to search for flights and airports worldwide.",
+      link: "https://airtracker.vercel.app",
+      linkGit: "https://github.com/carlosaj98/flights-tracking",
+    },
+    {
       id: "work-dev-feedback",
       image: "/works-images/work-dev-feedback.jpg",
       title: "MERN Full Stack App",
