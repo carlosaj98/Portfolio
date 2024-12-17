@@ -1,5 +1,5 @@
 import {
-  IconJavascript,
+  IconJavaScript,
   IconHTML,
   IconCSS,
   IconReact,
@@ -8,6 +8,7 @@ import {
   IconExpress,
   IconMongo,
   IconSQL,
+  IconTypeScript,
 } from "../../common/Icons/IconsDev"
 
 const Skills = [
@@ -23,8 +24,13 @@ const Skills = [
   },
   {
     id: "icon-javascript",
-    icon: <IconJavascript />,
+    icon: <IconJavaScript />,
     text: "JavaScript",
+  },
+  {
+    id: "icon-typescript",
+    icon: <IconTypeScript />,
+    text: "TypeScript",
   },
   {
     id: "icon-React",
