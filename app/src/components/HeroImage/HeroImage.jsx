@@ -1,4 +1,4 @@
-import { Box } from "@mui/material"
+
 import HeroImageContainer from "./Style"
 
 function HeroImage({ titleIndex }) {
