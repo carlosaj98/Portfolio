@@ -1,4 +1,3 @@
-
 import HeroImageContainer from "./Style"
 
 function HeroImage({ titleIndex }) {
