@@ -6,18 +6,21 @@ import NavLinks from "./NavLinks"
 function Navbar() {
   const isMobileScreen = useMediaQuery("(max-width: 600px)")
   return (
-    <NavbarContainer marginBottom={{sm:"24px", xs:"12px"}}>
-      {NavLinks.map((link) => {
-        return (
-          <Link
-            key={link.id}
-            href={"#" + link.id}
-            padding={{ sm: "12px 24px", xs: "6px 12px" }}
-          >
-            {!isMobileScreen ? link.title : link.icon}
-          </Link>
-        )
-      })}
+    <NavbarContainer marginBottom={{ sm: "24px", xs: "12px" }}>
+      <Stack className="navlinks-container">
+        {NavLinks.map((link) => {
+          return (
+            <Link
+              key={link.id}
+              href={"#" + link.id}
+              padding={{ sm: "12px 24px", xs: "6px 12px" }}
+            >
+              {!isMobileScreen ? link.title : link.icon}
+            </Link>
+          )
+        })}
+      </Stack>
+      <Stack className="nav-trans"></Stack>
     </NavbarContainer>
   )
 }

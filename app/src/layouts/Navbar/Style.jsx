@@ -1,17 +1,23 @@
 import { Stack, styled } from "@mui/material"
 
 const NavbarContainer = styled(Stack)({
-  flexDirection: "row",
-  alignItems: "baseline",
   position: "fixed",
   bottom: "0",
-  backgroundColor: "rgba(0,0,0,0.4)",
-  padding: "4px",
-  backdropFilter: "blur(7px)",
-  borderRadius: "64px",
-  gap: "6px",
-  zIndex: "10",
-  border: "2px solid var(--gray)",
+  flexDirection:"row",
+  alignItems:"center",
+  justifyContent:"center",
+
+  ".navlinks-container":{
+    flexDirection: "row",
+    alignItems: "baseline",
+    backgroundColor: "rgba(0,0,0,0.4)",
+    padding: "4px",
+    backdropFilter: "blur(7px)",
+    borderRadius: "64px",
+    gap: "6px",
+    border: "2px solid var(--gray)",
+  },
+
 
   a: {
     display: "flex",
