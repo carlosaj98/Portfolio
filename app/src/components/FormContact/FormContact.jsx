@@ -5,8 +5,10 @@ import { yupResolver } from "@hookform/resolvers/yup"
 import InputTemplate from "./InputTemplate"
 import { SubmitButton } from "../../common/Buttons/Buttons"
 import emailService from "../../services/emailService"
+import { useTranslation } from "react-i18next"
 
 function FormContact({ fields, validation }) {
+  const {t} = useTranslation()
   const {
     control,
     handleSubmit,
@@ -46,7 +48,7 @@ function FormContact({ fields, validation }) {
         />
       ))}
       <Box>
-        <SubmitButton text={"Send a message"} />
+        <SubmitButton text={t("contact_section.form_button")} />
       </Box>
     </FormContactContainer>
   )

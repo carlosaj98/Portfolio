@@ -49,5 +49,13 @@
       "title_cuphead": "Juego en JavaScript",
       "desc_cuphead": "Creé un juego inspirado en Cuphead empleando programación orientada a objetos para la estructura y manipulación del DOM para actualizaciones dinámicas del juego."
     }
+  },
+  "contact_section": {
+    "contact_title":"Contáctame",
+    "form_name": "Tu nombre",
+    "form_email": "Tu email",
+    "form_subject": "Escribe un asunto",
+    "form_content": "Escribe algo",
+    "form_button":"Enviar"
   }
 }

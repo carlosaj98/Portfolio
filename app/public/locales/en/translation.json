@@ -49,5 +49,14 @@
       "title_cuphead": "JavaScript Game",
       "desc_cuphead": "Created a Cuphead-inspired game employing object-oriented programming for structure and DOM manipulation for dynamic gameplay updates."
     }
+  },
+
+  "contact_section":{
+    "contact_title":"Contact me",
+    "form_name":"Your name",
+    "form_email":"Your email",
+    "form_subject":"Write a subject",
+    "form_content":"Write something",
+    "form_button":"Send"
   }
 }

@@ -1,31 +1,34 @@
 import * as yup from "yup"
+import { useTranslation } from "react-i18next"
+const FormFields = () => {
+  const { t } = useTranslation()
+  return [
+    {
+      name: "fullname",
+      label: "Write your name",
+      placeholder: t("contact_section.form_name"),
+    },
+    {
+      name: "email",
+      label: "Write your email",
+      placeholder: t("contact_section.form_email"),
+    },
 
-const formFields = [
-  {
-    name: "fullname",
-    label: "Write your name",
-    placeholder: "Your name",
-  },
-  {
-    name: "email",
-    label: "Write your email",
-    placeholder: "Your email",
-  },
+    {
+      name: "subject",
+      label: "Write a subject",
+      placeholder: t("contact_section.form_subject"),
+    },
 
-  {
-    name: "subject",
-    label: "Write a subject",
-    placeholder: "Write a subject",
-  },
-
-  {
-    name: "content",
-    label: "Write something",
-    placeholder: "Your message",
-    multiline: true,
-    minRows: 10,
-  },
-]
+    {
+      name: "content",
+      label: "Write something",
+      placeholder: t("contact_section.form_content"),
+      multiline: true,
+      minRows: 10,
+    },
+  ]
+}
 
 const validationSchema = yup.object().shape({
   fullname: yup.string().required("Can`t be empty"),
@@ -34,4 +37,4 @@ const validationSchema = yup.object().shape({
   content: yup.string().required("Can`t be empty"),
 })
 
-export { formFields, validationSchema }
+export { FormFields, validationSchema }
