@@ -6,6 +6,7 @@ const NavbarContainer = styled(Stack)({
   flexDirection:"row",
   alignItems:"center",
   justifyContent:"center",
+  gap: "12px",
 
   ".navlinks-container":{
     flexDirection: "row",
