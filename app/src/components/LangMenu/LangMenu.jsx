@@ -1,12 +1,14 @@
 import langList from "./LangList"
 import LangMenuContainer from "./Style"
 import { Box, Stack } from "@mui/material"
+import { useTranslation } from "react-i18next"
 
 function LangMenu() {
-  const langStorage = localStorage.getItem("i18nextLng")
+  const { i18n } = useTranslation()
 
   const handleClick = (lang) => {
-    langStorage && localStorage.setItem("i18nextLng", lang)
+    i18n.changeLanguage(lang)
+    localStorage.setItem("i18nextLng", lang)
   }
   return (
     <LangMenuContainer>

@@ -1,4 +1,8 @@
 {
-  "welcome": "¡Bienvenido a nuestra aplicación!",
-  "language_switch": "Cambiar idioma"
+  "home_greeting": "Hola! 👋,",
+  "home_name": "Soy Carlos",
+  "home_description": "Creo aplicaciones y páginas web con experiencias de usuario fluidas, integrando diseño 3D para ofrecer soluciones visualmente impactantes. Si estás buscando un profesional versátil para dar vida a tus ideas, no dudes en contactarme",
+  "dev_rol": "Desarrollador Full Stack",
+  "artist_rol": "Artista 3D",
+  "cv_button":"Descargar CV"
 }

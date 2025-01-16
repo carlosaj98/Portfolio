@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Stack, Typography, Link } from "@mui/material"
-
+import { useTranslation } from "react-i18next"
 import {
   IconLinkedin,
   IconArtstation,
@@ -11,6 +11,7 @@ import {
 import HeroTextsContainer from "./Style"
 
 function HeroTexts({ titleIndex, currentTitle }) {
+  const { t } = useTranslation()
   return (
     <HeroTextsContainer
       className="text-intro-container animate__fadeInLeft"
@@ -21,9 +22,9 @@ function HeroTexts({ titleIndex, currentTitle }) {
         textAlign={{ md: "left", xs: "center" }}
         fontSize={{ md: "var(--font-size-XXXL)", xs: "var(--font-size-XL)" }}
       >
-        Hi! 👋,
+        {t("home_greeting")}
         <br />
-        I`m Carlos
+        {t("home_name")}
       </Typography>
       {titleIndex === 0 && (
         <Typography
@@ -68,10 +69,7 @@ function HeroTexts({ titleIndex, currentTitle }) {
         textAlign={{ md: "left", xs: "center" }}
         fontSize={{ md: "var(--font-size-S)", xs: "var(--font-size-XXS)" }}
       >
-        I create web applications and pages with
-        seamless user experiences, integrating 3D design to deliver visually
-        impactful solutions. If you`re looking for a versatile professional to
-        bring your ideas to life, feel free to reach out.
+        {t("home_description")}
       </Typography>
       <Stack
         id="social-media-links"
@@ -114,7 +112,7 @@ function HeroTexts({ titleIndex, currentTitle }) {
           download="CV_CarlosAlvarez"
           className="cv-download"
         >
-          Download CV
+          {t("cv_button")}
           <IconDownload color={"var(--gray)"} size={"16px"} />
         </Link>
       </Stack>

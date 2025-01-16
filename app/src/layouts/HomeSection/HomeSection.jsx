@@ -2,9 +2,11 @@ import {  Container } from "@mui/material"
 import HomeContainer from "./Style"
 import { useState, useEffect } from "react"
 import { HeroTexts, HeroImage } from "../../components"
+import { useTranslation } from "react-i18next"
 
 function HomeSection() {
-  const heroTitles = ["Full Stack Developer", "3D Artist"]
+  const {t} = useTranslation()
+  const heroTitles = [t("dev_rol"), t("artist_rol")]
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0)
   useEffect(() => {
     setTimeout(() => {
