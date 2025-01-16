@@ -7,11 +7,12 @@ const NavbarContainer = styled(Stack)({
   alignItems:"center",
   justifyContent:"center",
   gap: "12px",
+  zIndex:"100",
 
   ".navlinks-container":{
     flexDirection: "row",
     alignItems: "baseline",
-    backgroundColor: "rgba(0,0,0,0.4)",
+    backgroundColor: "rgba(0,0,0,0.6)",
     padding: "4px",
     backdropFilter: "blur(7px)",
     borderRadius: "64px",

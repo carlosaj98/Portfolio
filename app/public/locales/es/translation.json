@@ -22,5 +22,32 @@
     "dev_desc_2": "También utilizo Node.js y Express.js para construir la lógica del lado del servidor, gestionar bases de datos como MongoDB y establecer API para un flujo de datos eficiente entre el servidor y el frontend. Garantizar medidas de seguridad sólidas también forma parte de mi labor, protegiendo la integridad de los datos y la privacidad de los usuarios.",
     "artist_title": "Artista 3D",
     "artist_desc_1": "Como artista 3D, doy vida a la imaginación a través de mundos digitales. Utilizando software como Blender, Maya o Zbrush, entre otros, esculpo, texturizo y renderizo modelos 3D, creando visuales cautivadores. Diseño entornos, personajes y objetos que forman el escenario para videojuegos, películas o simulaciones. Mi objetivo es combinar la creatividad con habilidades técnicas para producir experiencias inmersivas y visualmente impactantes."
+  },
+  "works_section": {
+    "works_title": "Estas son mis creaciones",
+    "dev_button": "Proyectos de Desarrollador",
+    "artist_button": "Proyectos de Artista 3D",
+    "artist_works": {
+      "title_phone": "Teléfono de la Era Victoriana",
+      "desc_phone": "Teléfono antiguo inspirado en la era victoriana. El propósito de este objeto ha sido mejorar mis habilidades de modelado hardsurface y texturizado de objetos para videojuegos.",
+      "title_ak": "AKM calibre 7,62 mm",
+      "desc_ak": "Proyecto personal con el objetivo de reforzar mis habilidades de modelado hardsurface. Objetos modelados y texturizados: AKM y balas. El resto de los objetos se han tomado de la biblioteca Quixel Megascans.",
+      "title_knight": "Caballera",
+      "desc_knight": "Este personaje ha sido un proyecto personal inspirado en el concepto creado por Kim Sung Hwan. El objetivo de este proyecto fue crear un personaje en tiempo real completamente optimizado, incluso en los detalles más pequeños, logrando el mayor realismo posible.",
+      "title_creature": "Criatura Volcánica",
+      "desc_creature": "Creé esta criatura en el Máster de Modelado de Personajes 3D de Animum Creativity Advanced School.",
+      "title_kid": "Niño Cyberpunk",
+      "desc_kid": "Este es uno de mis personajes favoritos que realicé durante mis estudios en Animum Creativity Advanced School."
+    },
+    "dev_works": {
+      "title_flights": "Aplicación Web Air Tracker",
+      "desc_flights": "Air Tracker es una aplicación de seguimiento de vuelos y aeropuertos en tiempo real con impresionantes visualizaciones en 3D. Este proyecto permite a los usuarios buscar vuelos y aeropuertos en todo el mundo.",
+      "title_feedback": "Aplicación Full Stack MERN",
+      "desc_feedback": "Este proyecto personal consiste en la creación de una SPA (Aplicación de Página Única) Full Stack, que está basada en una red social para proyectos empresariales.",
+      "title_cultural": "Aplicación Web para CulturalFit",
+      "desc_cultural": "Aplicación web creada para la empresa CulturalFit con el objetivo de desarrollar un test orientado a B2B.",
+      "title_cuphead": "Juego en JavaScript",
+      "desc_cuphead": "Creé un juego inspirado en Cuphead empleando programación orientada a objetos para la estructura y manipulación del DOM para actualizaciones dinámicas del juego."
+    }
   }
 }

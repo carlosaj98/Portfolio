@@ -1,89 +1,89 @@
-const worksTemplate = {
-  artist: [
-    {
-      id: "work-3d-phone",
-      image: "/works-images/work-3d-phone.jpg",
-      title: "Telephone Victorian Age",
-      description:
-        "Old phone inspired by the victorian age. The purpose of this prop has been to improve my skills of hardsurface and texturing of objects for videogames.",
-      link: "https://www.artstation.com/artwork/Ar3W2W",
-    },
+import { useTranslation } from "react-i18next"
 
-    {
-      id: "work-3d-akm",
-      image: "/works-images/work-3d-akm.jpg",
-      title: "AKM 7,62 mm caliber",
-      description:
-        "Personal project with the aim of reinforcing my hard surface skills. Modeled and textured objects: AKM and bullets. The rest of the objects have been taken from the Quixel Megascans library.",
-      link: "https://www.artstation.com/artwork/03qog4",
-    },
+const worksTemplate = () => {
+  const { t } = useTranslation()
+  return {
+    artist: [
+      {
+        id: "work-3d-phone",
+        image: "/works-images/work-3d-phone.jpg",
+        title: t("works_section.artist_works.title_phone"),
+        description: t("works_section.artist_works.desc_phone"),
+        link: "https://www.artstation.com/artwork/Ar3W2W",
+      },
 
-    {
-      id: "work-3d-knight",
-      image: "/works-images/work-3d-knight.jpg",
-      title: "Knight Female",
-      description:
-        "This character has been a personal project inspired in the concept made by Kim Sung Hwan. The objetive of this project was create a real time character completly optimized even the smallest detail but achieving the greatest possible realism.",
-      link: "https://www.artstation.com/artwork/Jeg3GZ",
-    },
+      {
+        id: "work-3d-akm",
+        image: "/works-images/work-3d-akm.jpg",
+        title: t("works_section.artist_works.title_ak"),
+        description: t("works_section.artist_works.desc_ak"),
+        link: "https://www.artstation.com/artwork/03qog4",
+      },
 
-    {
-      id: "work-3d-creature",
-      image: "/works-images/work-3d-creature.jpg",
-      title: "Volcanic Creature",
-      description:
-        "I made this creature in the 3D Character Modeling Master of Animum Creativity Advanced School",
-      link: "https://www.artstation.com/artwork/Ar9EVN",
-    },
+      {
+        id: "work-3d-knight",
+        image: "/works-images/work-3d-knight.jpg",
+        title: t("works_section.artist_works.title_knight"),
+        description: t("works_section.artist_works.desc_knight"),
+        link: "https://www.artstation.com/artwork/Jeg3GZ",
+      },
 
-    {
-      id: "work-3d-kid",
-      image: "/works-images/work-3d-kid.jpg",
-      title: "Cyberpunk Kid",
-      description:
-        "This is one of my favorite characters that I made throughout my studies at Animum Creativity Advanced School.",
-      link: "https://www.artstation.com/artwork/03XdAE",
-    },
-  ],
+      {
+        id: "work-3d-creature",
+        image: "/works-images/work-3d-creature.jpg",
+        title: t("works_section.artist_works.title_creature"),
+        description: t("works_section.artist_works.desc_creature"),
+        link: "https://www.artstation.com/artwork/Ar9EVN",
+      },
 
-  developer: [
-    {
-      id: "work-dev-flights",
-      image: "/works-images/work-dev-flights.jpg",
-      title: "Air Tracker Web App",
-      description:
-        "Air Tracker is a real-time flight and airport tracking application featuring stunning 3D visualizations. This project allows users to search for flights and airports worldwide.",
-      link: "https://airtracker.vercel.app",
-      linkGit: "https://github.com/carlosaj98/flights-tracking",
-    },
-    {
-      id: "work-dev-feedback",
-      image: "/works-images/work-dev-feedback.jpg",
-      title: "MERN Full Stack App",
-      description:
-        "This personal project consists of the creation of a Full Stack SPA (Single Page Application) which is based on a social network for business projects.",
-      link: "https://productfeedback-carlosalvarez.onrender.com/",
-      linkGit: "https://github.com/carlosaj98/Project-ProductFeedback",
-    },
-    {
-      id: "work-dev-cultural",
-      image: "/works-images/work-dev-cultural.jpg",
-      title: "Web App for CulturalFit",
-      description:
-        "Web application created for the company CulturalFit with the objective of developing a test aimed at B2B",
-      link: "https://culturalfit-desafio.onrender.com",
-      linkGit: "https://github.com/carlosaj98/desafioBootcamp",
-    },
-    {
-      id: "work-dev-cuphead",
-      image: "/works-images/work-dev-cuphead.jpg",
-      title: "JavaScript Game",
-      description:
-        "Created a Cuphead-inspired game employing object-oriented programming for structure and DOM manipulation for dynamic gameplay updates.",
-      link: "https://cuphead-gameproject.onrender.com",
-      linkGit: "https://github.com/carlosaj98/Cuphead_gameProject",
-    },
-  ],
+      {
+        id: "work-3d-kid",
+        image: "/works-images/work-3d-kid.jpg",
+        title: t("works_section.artist_works.title_kid"),
+        description: t("works_section.artist_works.desc_kid"),
+        link: "https://www.artstation.com/artwork/03XdAE",
+      },
+    ],
+
+    developer: [
+      {
+        id: "work-dev-flights",
+        image: "/works-images/work-dev-flights.jpg",
+        title: t("works_section.dev_works.title_flights"),
+        description:
+        t("works_section.dev_works.desc_flights"),
+        link: "https://airtracker.vercel.app",
+        linkGit: "https://github.com/carlosaj98/flights-tracking",
+      },
+      {
+        id: "work-dev-feedback",
+        image: "/works-images/work-dev-feedback.jpg",
+        title: t("works_section.dev_works.title_feedback"),
+        description:
+        t("works_section.dev_works.desc_feedback"),
+        link: "https://productfeedback-carlosalvarez.onrender.com/",
+        linkGit: "https://github.com/carlosaj98/Project-ProductFeedback",
+      },
+      {
+        id: "work-dev-cultural",
+        image: "/works-images/work-dev-cultural.jpg",
+        title: t("works_section.dev_works.title_cultural"),
+        description:
+        t("works_section.dev_works.desc_cultural"),
+        link: "https://culturalfit-desafio.onrender.com",
+        linkGit: "https://github.com/carlosaj98/desafioBootcamp",
+      },
+      {
+        id: "work-dev-cuphead",
+        image: "/works-images/work-dev-cuphead.jpg",
+        title: t("works_section.dev_works.title_cuphead"),
+        description:
+        t("works_section.dev_works.desc_cuphead"),
+        link: "https://cuphead-gameproject.onrender.com",
+        linkGit: "https://github.com/carlosaj98/Cuphead_gameProject",
+      },
+    ],
+  }
 }
 
 export default worksTemplate
