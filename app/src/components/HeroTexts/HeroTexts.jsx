@@ -22,9 +22,9 @@ function HeroTexts({ titleIndex, currentTitle }) {
         textAlign={{ md: "left", xs: "center" }}
         fontSize={{ md: "var(--font-size-XXXL)", xs: "var(--font-size-XL)" }}
       >
-        {t("home_greeting")}
+        {t("home_section.home_greeting")}
         <br />
-        {t("home_name")}
+        {t("home_section.home_name")}
       </Typography>
       {titleIndex === 0 && (
         <Typography
@@ -69,7 +69,7 @@ function HeroTexts({ titleIndex, currentTitle }) {
         textAlign={{ md: "left", xs: "center" }}
         fontSize={{ md: "var(--font-size-S)", xs: "var(--font-size-XXS)" }}
       >
-        {t("home_description")}
+        {t("home_section.home_description")}
       </Typography>
       <Stack
         id="social-media-links"
@@ -112,7 +112,7 @@ function HeroTexts({ titleIndex, currentTitle }) {
           download="CV_CarlosAlvarez"
           className="cv-download"
         >
-          {t("cv_button")}
+          {t("home_section.cv_button")}
           <IconDownload color={"var(--gray)"} size={"16px"} />
         </Link>
       </Stack>

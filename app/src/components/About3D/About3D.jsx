@@ -1,9 +1,11 @@
-import { Stack, Box, Typography, Divider } from "@mui/material"
+import { Stack, Box, Typography } from "@mui/material"
 import { Icon3D } from "../../common/Icons/Icons"
 import Skills from "./Skills"
 import About3DContainer from "./Styles"
+import { useTranslation } from "react-i18next"
 
 function About3D() {
+  const { t } = useTranslation()
   return (
     <About3DContainer
       flexDirection={{ md: "row", xs: "column" }}
@@ -44,20 +46,14 @@ function About3D() {
             id="artist-title"
             fontSize={{ sm: "var(--font-size-M)", xs: "var(--font-size-S)" }}
           >
-            3D Artist
+            {t("about_section.artist_title")}
           </Typography>
         </Stack>
         <Typography
           id="artist-desc"
           fontSize={{ sm: "var(--font-size-XS)", xs: "var(--font-size-XXS)" }}
         >
-          As a 3D artist, I bring imagination to life through digital worlds.
-          Using software like Blender, Maya, or Zbrush among others, I sculpt,
-          texture, and render 3D models, creating captivating visuals. I craft
-          environments, characters, and objects that form the backdrop for
-          games, films, or simulations. My goal is to blend creativity with
-          technical skills to produce immersive and visually stunning
-          experiences.
+          {t("about_section.artist_desc_1")}
         </Typography>
       </Stack>
     </About3DContainer>

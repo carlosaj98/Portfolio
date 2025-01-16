@@ -1,8 +1,26 @@
 {
-  "home_greeting": "Hi! 👋,",
-  "home_name": "I`m Carlos",
-  "home_description":"I create web applications and pages with seamless user experiences, integrating 3D design to deliver visually impactful solutions. If you`re looking for a versatile professional to bring your ideas to life, feel free to reach out.",
-  "dev_rol":"Full Stack Developer",
-  "artist_rol":"3D Artist",
-  "cv_button":"Download CV"
+  "home_section": {
+    "home_greeting": "Hi! 👋,",
+    "home_name": "I`m Carlos",
+    "home_description": "I create web applications and pages with seamless user experiences, integrating 3D design to deliver visually impactful solutions. If you`re looking for a versatile professional to bring your ideas to life, feel free to reach out.",
+    "dev_rol": "Full Stack Developer",
+    "artist_rol": "3D Artist",
+    "cv_button": "Download CV"
+  },
+
+  "navbar": {
+    "nav_home": "Home",
+    "nav_about": "About me",
+    "nav_works": "Works",
+    "nav_contact": "Contact"
+  },
+
+  "about_section": {
+    "about_title": "What I can do",
+    "dev_title": "Full Stack Developer",
+    "dev_desc_1": "As a Full Stack Developer specializing in MERN, I focus on building captivating user interfaces using React.js, HTML, CSS, JavaScript and TypeScript. I craft responsive designs that ensure an engaging and seamless user experience across various devices.",
+    "dev_desc_2": "I also use Node.js and Express.js to construct the server-side logic, manage databases like MongoDB, and establish APIs for efficient data flow between the server and frontend. Ensuring robust security measures is also part of my role to safeguard data integrity and user privacy.",
+    "artist_title":"3D Artist",
+    "artist_desc_1": "As a 3D artist, I bring imagination to life through digital worlds. Using software like Blender, Maya, or Zbrush among others, I sculpt, texture, and render 3D models, creating captivating visuals. I craft environments, characters, and objects that form the backdrop for games, films, or simulations. My goal is to blend creativity with technical skills to produce immersive and visually stunning experiences."
+  }
 }

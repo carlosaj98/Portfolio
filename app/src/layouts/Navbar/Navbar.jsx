@@ -9,10 +9,11 @@ import LangMenu from "../../components/LangMenu/LangMenu"
 function Navbar() {
   const isMobileScreen = useMediaQuery("(max-width: 600px)")
   const [isVisible, setIsVisible] = useState(false)
+  const navLinks = NavLinks()
   return (
     <NavbarContainer marginBottom={{ sm: "24px", xs: "12px" }}>
       <Stack className="navlinks-container">
-        {NavLinks.map((link) => {
+        {navLinks.map((link) => {
           return (
             <Link
               key={link.id}

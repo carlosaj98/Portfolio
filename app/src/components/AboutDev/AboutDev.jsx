@@ -2,8 +2,10 @@ import { Stack, Box, Typography } from "@mui/material"
 import { IconDev } from "../../common/Icons/Icons"
 import Skills from "./Skills"
 import AboutDevContainer from "./Styles"
+import { useTranslation } from "react-i18next"
 
 function AboutDev() {
+  const {t} = useTranslation()
   return (
     <AboutDevContainer
       flexDirection={{ md: "row", xs: "column" }}
@@ -44,7 +46,7 @@ function AboutDev() {
             id="dev-title"
             fontSize={{ sm: "var(--font-size-M)", xs: "var(--font-size-S)" }}
           >
-            Full Stack Developer
+            {t("about_section.dev_title")}
           </Typography>
         </Stack>
         <Stack className="dev-desc-container">
@@ -52,20 +54,13 @@ function AboutDev() {
             className="dev-desc"
             fontSize={{ sm: "var(--font-size-XS)", xs: "var(--font-size-XXS)" }}
           >
-            As a Full Stack Developer specializing in MERN, I focus on building
-            captivating user interfaces using React.js, HTML, CSS, JavaScript
-            and TypeScript. I craft responsive designs that ensure an engaging
-            and seamless user experience across various devices.
+          {t("about_section.dev_desc_1")}
           </Typography>
           <Typography
             className="dev-desc"
             fontSize={{ sm: "var(--font-size-XS)", xs: "var(--font-size-XXS)" }}
           >
-            I also use Node.js and Express.js to construct the
-            server-side logic, manage databases like MongoDB, and establish APIs
-            for efficient data flow between the server and frontend. Ensuring
-            robust security measures is also part of my role to safeguard data
-            integrity and user privacy.
+         {t("about_section.dev_desc_2")}
           </Typography>
         </Stack>
       </Stack>

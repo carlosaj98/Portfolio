@@ -1,8 +1,26 @@
 {
-  "home_greeting": "Hola! 👋,",
-  "home_name": "Soy Carlos",
-  "home_description": "Creo aplicaciones y páginas web con experiencias de usuario fluidas, integrando diseño 3D para ofrecer soluciones visualmente impactantes. Si estás buscando un profesional versátil para dar vida a tus ideas, no dudes en contactarme",
-  "dev_rol": "Desarrollador Full Stack",
-  "artist_rol": "Artista 3D",
-  "cv_button":"Descargar CV"
+  "home_section": {
+    "home_greeting": "Hola! 👋,",
+    "home_name": "Soy Carlos",
+    "home_description": "Creo aplicaciones y páginas web con experiencias de usuario fluidas, integrando diseño 3D para ofrecer soluciones visualmente impactantes. Si estás buscando un profesional versátil para dar vida a tus ideas, no dudes en contactarme",
+    "dev_rol": "Desarrollador Full Stack",
+    "artist_rol": "Artista 3D",
+    "cv_button": "Descargar CV"
+  },
+
+  "navbar": {
+    "nav_home": "Inicio",
+    "nav_about": "Sobre mi",
+    "nav_works": "Proyectos",
+    "nav_contact": "Contacto"
+  },
+
+  "about_section": {
+    "about_title": "Que puedo hacer",
+    "dev_title": "Desarrollador Full Stack",
+    "dev_desc_1": "Como Desarrollador Full Stack especializado en MERN, me enfoco en crear interfaces de usuario atractivas utilizando React.js, HTML, CSS, JavaScript y TypeScript. Diseñó interfaces responsivas que garantizan una experiencia de usuario envolvente y fluida en diversos dispositivos.",
+    "dev_desc_2": "También utilizo Node.js y Express.js para construir la lógica del lado del servidor, gestionar bases de datos como MongoDB y establecer API para un flujo de datos eficiente entre el servidor y el frontend. Garantizar medidas de seguridad sólidas también forma parte de mi labor, protegiendo la integridad de los datos y la privacidad de los usuarios.",
+    "artist_title": "Artista 3D",
+    "artist_desc_1": "Como artista 3D, doy vida a la imaginación a través de mundos digitales. Utilizando software como Blender, Maya o Zbrush, entre otros, esculpo, texturizo y renderizo modelos 3D, creando visuales cautivadores. Diseño entornos, personajes y objetos que forman el escenario para videojuegos, películas o simulaciones. Mi objetivo es combinar la creatividad con habilidades técnicas para producir experiencias inmersivas y visualmente impactantes."
+  }
 }
