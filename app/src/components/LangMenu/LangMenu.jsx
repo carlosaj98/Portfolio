@@ -1,18 +1,20 @@
-import langList from "./LangList"
+import LangList from "./LangList"
 import LangMenuContainer from "./Style"
 import { Box, Stack } from "@mui/material"
 import { useTranslation } from "react-i18next"
 
-function LangMenu() {
+function LangMenu({action}) {
   const { i18n } = useTranslation()
+  const list = LangList()
 
   const handleClick = (lang) => {
     i18n.changeLanguage(lang)
     localStorage.setItem("i18nextLng", lang)
+    action()
   }
   return (
-    <LangMenuContainer>
-      {langList.map((lang) => {
+    <LangMenuContainer className="animate__animated animate__fadeInDown">
+      {list.map((lang) => {
         return (
           <Stack
             key={lang.id}

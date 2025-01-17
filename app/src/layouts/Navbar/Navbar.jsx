@@ -25,19 +25,19 @@ function Navbar() {
           )
         })}
       </Stack>
-      <Stack className="nav-lang" >
+      <Stack className="nav-lang">
         <Box
           height={"48px"}
           width={"48px"}
           borderRadius={"50%"}
           border={"2px solid var(--gray-light)"}
           padding={"6px"}
-          onClick={()=> setIsVisible((status)=>!status)}
-          sx={{cursor:"pointer", backgroundColor:"rgba(0,0,0,0.6)"}}
+          onClick={() => setIsVisible((status) => !status)}
+          sx={{ cursor: "pointer", backgroundColor: "rgba(0,0,0,0.6)" }}
         >
           <IconLanguage color={"var(--gray-light)"} />
         </Box>
-        {isVisible && <LangMenu />}
+        {isVisible && <LangMenu action={() => setIsVisible(false)} />}
       </Stack>
     </NavbarContainer>
   )

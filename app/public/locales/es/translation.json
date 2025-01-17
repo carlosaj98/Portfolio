@@ -57,5 +57,10 @@
     "form_subject": "Escribe un asunto",
     "form_content": "Escribe algo",
     "form_button":"Enviar"
+  },
+
+  "lang_button":{
+    "spanish":"Español",
+    "english":"Inglés"
   }
 }

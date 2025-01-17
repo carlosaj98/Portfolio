@@ -58,5 +58,12 @@
     "form_subject":"Write a subject",
     "form_content":"Write something",
     "form_button":"Send"
+  },
+
+  "lang_button":{
+    "spanish":"Spanish",
+    "english":"English"
   }
+
+
 }
