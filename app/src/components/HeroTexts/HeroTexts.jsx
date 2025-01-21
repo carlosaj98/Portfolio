@@ -108,8 +108,8 @@ function HeroTexts({ titleIndex, currentTitle }) {
           <IconGithub color={"var(--gray)"} />
         </Link>
         <Link
-          href="/CV_CarlosAlvarez.pdf"
-          download="CV_CarlosAlvarez"
+          href={t("cv.href")}
+          download={t("cv.file_name")}
           className="cv-download"
         >
           {t("home_section.cv_button")}

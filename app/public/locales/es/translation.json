@@ -62,5 +62,9 @@
   "lang_button":{
     "spanish":"Español",
     "english":"Inglés"
+  },
+  "cv":{
+    "href":"/cv/CV_CarlosAlvarezJimenez.pdf",
+    "file_name":"CV_CarlosAlvarezJimenez"
   }
 }
