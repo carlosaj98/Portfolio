@@ -9,6 +9,8 @@ import {
   IconMongo,
   IconSQL,
   IconTypeScript,
+  IconRedux,
+  IconChakra
 } from "../../common/Icons/IconsDev"
 
 const Skills = [
@@ -38,9 +40,19 @@ const Skills = [
     text: "React",
   },
   {
+    id: "icon-Redux",
+    icon: <IconRedux />,
+    text: "Redux",
+  },
+  {
     id: "icon-material",
     icon: <IconMaterial />,
     text: "Material UI",
+  },
+  {
+    id: "icon-chakra",
+    icon: <IconChakra />,
+    text: "Chakra UI",
   },
   {
     id: "icon-node",
