@@ -3,7 +3,7 @@ import { Stack, keyframes, styled } from "@mui/material"
 const HomeContainer = styled(Stack)({
   height: "100vh",
   background: `
-  radial-gradient(circle at bottom, var(--primary-color-light) -200%, var(--hero-bg-color) 70%)
+  radial-gradient(circle at bottom, var(--primary-color-light) -150%, var(--hero-bg-color) 70%)
   `,
 
   ".container": {
