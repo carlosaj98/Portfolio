@@ -38,7 +38,7 @@ function HeroTexts({ titleIndex, currentTitle }) {
             xs: "var(--font-size-L)",
           }}
           sx={{
-            textShadow: "0 0 12px var(--primary-color-light)",
+            textShadow: "0 0 6px var(--primary-color-light)",
           }}
         >
           {currentTitle}
@@ -57,7 +57,7 @@ function HeroTexts({ titleIndex, currentTitle }) {
             xs: "var(--font-size-L)",
           }}
           sx={{
-            textShadow: "0 0 12px var(--secondary-color)",
+            textShadow: "0 0 6px var(--secondary-color)",
           }}
         >
           {currentTitle}

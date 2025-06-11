@@ -1,4 +1,4 @@
-import { Stack, keyframes, styled } from "@mui/material"
+import { Stack, styled } from "@mui/material"
 
 const HomeContainer = styled(Stack)({
   height: "100vh",

@@ -4,9 +4,8 @@ const HeroTextsContainer = styled(Stack)({
   width: "100%",
   gap: "12px",
   h1: {
-    color: "white",
+    color: "var(--headers-color)",
     fontFamily: "var(--font-title)",
-    textShadow: "0 0 12px white",
   },
 
   h2: {
@@ -14,11 +13,10 @@ const HeroTextsContainer = styled(Stack)({
   },
 
   p: {
-    color: "white",
+    color: "var(--texts-color)",
     fontFamily: "var(--font-text)",
     maxWidth: "650px",
     marginTop: "12px",
-    textShadow: "0 0 6px white",
   },
 
   ".social-media-links, .social-media-links svg": {

@@ -30,10 +30,17 @@ function IndexStyles() {
           "--font-size-S": "18px",
           "--font-size-XS": "16px",
           "--font-size-XXS": "14px",
+
+          "--headers-color": "white",
+          "--texts-color": "#ffffffbf",
+          "--hero-texts-shadows": ""
         },
 
-        ".custom-theme-dark":{
-          "--hero-bg-color": "#02040E",
+        ".custom-theme-light":{
+          "--hero-bg-color": "#fafafa",
+          "--headers-color": "#262626",
+          "--texts-color": "#404040",
+          
         },
 
         "*": {
