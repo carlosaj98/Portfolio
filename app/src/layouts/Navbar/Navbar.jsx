@@ -1,15 +1,17 @@
-import { Stack, Link, Box } from "@mui/material"
+import { Stack, Link, Box, Button } from "@mui/material"
 import NavbarContainer from "./Style"
 import { useMediaQuery } from "@mui/material"
 import NavLinks from "./NavLinks"
 import { IconLanguage } from "../../common/Icons/Icons"
 import { useState } from "react"
 import LangMenu from "../../components/LangMenu/LangMenu"
+import { useTheme } from "../../context/CustomThemeContext"
 
 function Navbar() {
   const isMobileScreen = useMediaQuery("(max-width: 600px)")
   const [isVisible, setIsVisible] = useState(false)
   const navLinks = NavLinks()
+  const { toggleTheme } = useTheme()
   return (
     <NavbarContainer marginBottom={{ sm: "24px", xs: "12px" }}>
       <Stack className="navlinks-container">
@@ -38,6 +40,9 @@ function Navbar() {
           <IconLanguage color={"var(--gray-light)"} />
         </Box>
         {isVisible && <LangMenu action={() => setIsVisible(false)} />}
+      </Stack>
+      <Stack>
+        <Button variant="contained" onClick={toggleTheme}>Theme</Button>
       </Stack>
     </NavbarContainer>
   )

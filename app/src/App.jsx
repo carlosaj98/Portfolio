@@ -8,8 +8,13 @@ import {
 } from "./layouts"
 import "animate.css"
 
-
 function App() {
+  localStorage.setItem("custom-theme", "dark")
+
+  const getTheme = localStorage.getItem("custom-theme")
+
+  document.querySelector("body").setAttribute("class", `theme-${getTheme}`)
+
   return (
     <Stack id="app-container" alignItems={"center"}>
       <Navbar />

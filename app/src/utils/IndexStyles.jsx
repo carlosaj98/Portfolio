@@ -31,6 +31,11 @@ function IndexStyles() {
           "--font-size-XS": "16px",
           "--font-size-XXS": "14px",
         },
+
+        ".custom-theme-dark":{
+          "--hero-bg-color": "#02040E",
+        },
+
         "*": {
           margin: "0",
           padding: "0",
