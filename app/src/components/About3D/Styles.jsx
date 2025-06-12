@@ -14,10 +14,10 @@ const About3DContainer = styled(Stack)({
     alignItems: "center",
     gap: "6px",
     background:
-      "linear-gradient(var(--secondary-color),var(--secondary-color-dark))",
-    boxShadow: "0 10px 15px black",
+      "linear-gradient(var(--secondary-color-extralight),transparent)",
+    boxShadow: "0 10px 15px rgba(0,0,0,0.25)",
     borderRadius: "12px",
-    border: "2px solid var(--secondary-color)",
+    border: "2px solid var(--secondary-color-extralight)",
     color: "black",
     fontWeight: "600",
   },

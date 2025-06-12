@@ -13,12 +13,11 @@ const AboutDevContainer = styled(Stack)({
   ".skill-dev": {
     alignItems: "center",
     gap: "6px",
-    background:
-      "linear-gradient(var(--primary-color),var(--primary-color-dark))",
-    boxShadow: "0 10px 15px black",
+    background: "linear-gradient(var(--primary-color-extralight),transparent)",
+    boxShadow: "0 10px 15px rgba(0,0,0,0.25)",
     borderRadius: "12px",
-    border: "2px solid var(--primary-color)",
-    color: "white",
+    border: "2px solid var(--primary-color-extralight)",
+    color: "black",
     fontWeight: "600",
   },
 
@@ -38,7 +37,7 @@ const AboutDevContainer = styled(Stack)({
   },
 
   ".dev-desc-container": {
-      gap:"16px",
+    gap: "16px",
   },
 
   ".dev-desc": {

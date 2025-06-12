@@ -30,7 +30,7 @@ function HeroTexts({ titleIndex, currentTitle }) {
         <Typography
           variant="h2"
           className="animate__fadeInLeft"
-          color="var(--primary-color-light)"
+          color="var(--primary-color)"
           textAlign={{ md: "left", xs: "center" }}
           fontSize={{
             lg: "var(--font-size-XXL)",
@@ -38,7 +38,7 @@ function HeroTexts({ titleIndex, currentTitle }) {
             xs: "var(--font-size-L)",
           }}
           sx={{
-            textShadow: "0 0 6px var(--primary-color-light)",
+            textShadow: "0 0 6px var(--primary-color)",
           }}
         >
           {currentTitle}

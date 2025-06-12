@@ -7,13 +7,17 @@ function IndexStyles() {
         ":root": {
           "--hero-bg-color": "#02040E",
 
-          "--primary-color": "#1C3659",
-          "--primary-color-dark": "#171B26",
-          "--primary-color-light": "#0798F2",
+          "--primary-color": "#0798f2",
+          "--primary-color-dark": "#005ea6",
+          "--primary-color-light": "#79caff",
+          "--primary-color-extradark": "#094371",
+          "--primary-color-extralight": "#dff0ff",
 
-          "--secondary-color": "#F2C879",
-          "--secondary-color-dark": "#D9C49C",
-          "--secondary-color-light": "#FAEACB",
+          "--secondary-color": "#f88317",
+          "--secondary-color-dark": "#c14e0d",
+          "--secondary-color-light": "#fcc375",
+          "--secondary-color-extradark": "#7c3412",
+          "--secondary-color-extralight": "#fff0d5",
 
           "--gray":"#ffffff80",
           "--gray-dark":"#ffffff40",

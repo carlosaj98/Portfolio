@@ -10,12 +10,12 @@ function HeroImage({ titleIndex }) {
       sx={{
         boxShadow:
           titleIndex === 0
-            ? "0 0 30px 0px var(--primary-color-light), 0 0 30px 0px var(--primary-color-light) inset"
+            ? "0 0 30px 0px var(--primary-color), 0 0 30px 0px var(--primary-color) inset"
             : "0 0 30px 0px var(--secondary-color), 0 0 30px 0px var(--secondary-color) inset",
         borderRadius: "50%",
         border:
           titleIndex === 0
-            ? "3px solid var(--primary-color-light)"
+            ? "3px solid var(--primary-color)"
             : "3px solid var(--secondary-color)",
         overflow: "hidden",
       }}
