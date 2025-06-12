@@ -37,7 +37,7 @@ function About3D() {
         })}
       </Stack>
       <Box className="divider"></Box>
-      <Stack id="text-artist-container" order={{ md: "0", xs: "0" }}>
+      <Stack id="title-artist-container" order={{ md: "0", xs: "0" }}>
         <Stack>
           <Box width={{ sm: "var(--font-size-M)", xs: "var(--font-size-S)" }}>
             <Icon3D color={"var(--secondary-color)"} />

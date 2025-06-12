@@ -1,52 +1,73 @@
 import { Stack, styled } from "@mui/material"
+import { useCustomTheme } from "../../context/CustomThemeContext"
 
-const About3DContainer = styled(Stack)({
-  marginTop: "32px",
-  justifyContent: "space-between",
+const About3DContainer = styled(Stack)(() => {
+  const { theme } = useCustomTheme()
+  return {
+    marginTop: "32px",
+    justifyContent: "space-between",
 
-  "#skills-artist-container": {
-    width: "100%",
-    flexDirection: "row",
-    flexWrap: "wrap",
-  },
+    "#skills-artist-container": {
+      width: "100%",
+      flexDirection: "row",
+      flexWrap: "wrap",
+    },
 
-  ".skill-artist": {
-    alignItems: "center",
-    gap: "6px",
-    background:
-      "linear-gradient(var(--secondary-color-extralight),transparent)",
-    boxShadow: "0 10px 15px rgba(0,0,0,0.25)",
-    borderRadius: "12px",
-    border: "2px solid var(--secondary-color-extralight)",
-    color: "black",
-    fontWeight: "600",
-  },
+    ".skill-artist": {
+      alignItems: "center",
+      gap: "6px",
+      background:
+        theme === "dark"
+          ? "linear-gradient(var(--secondary-color-dark),transparent)"
+          : "linear-gradient(var(--secondary-color-extralight),transparent)",
+      boxShadow: "0 5px 5px rgba(0,0,0,0.25)",
+      borderRadius: "12px",
+      border:
+        theme === "dark"
+          ? "2px solid var(--secondary-color-dark)"
+          : "2px solid var(--secondary-color-extralight)",
+      color: "var(--texts-colors)",
+      fontWeight: "600",
+    },
 
-  "#text-artist-container": {
-    width: "100%",
-    gap: "24px",
-  },
+    "#title-artist-container": {
+      width: "100%",
+      gap: "24px",
+      svg: {
+        fill:
+          theme === "dark"
+            ? "var(--secondary-color-light)"
+            : "var(--secondary-color)",
+      },
+    },
 
-  "#text-artist-container > div": {
-    flexDirection: "row",
-    gap: "16px",
-  },
+    "#title-artist-container > div": {
+      flexDirection: "row",
+      gap: "16px",
+    },
 
-  "#artist-title": {
-    fontFamily: "var(--font-title)",
-    color: "var(--secondary-color)",
-  },
+    "#artist-title": {
+      fontFamily: "var(--font-title)",
+      color:
+        theme === "dark"
+          ? "var(--secondary-color-light)"
+          : "var(--secondary-color)",
+    },
 
-  "#artist-desc": {
-    fontFamily: "var(--font-text)",
-    lineHeight: "var(--font-size-M)",
-    color: "white",
-  },
+    "#artist-desc": {
+      fontFamily: "var(--font-text)",
+      lineHeight: "var(--font-size-M)",
+      color: "var(--texts-color)",
+    },
 
-  ".divider": {
-    border: "1px solid var(--gray-dark)",
-    order: "1",
-  },
+    ".divider": {
+      border:
+        theme === "dark"
+          ? "1px solid var(--neutral-600)"
+          : "1px solid var(--neutral-400)",
+      order: "1",
+    },
+  }
 })
 
 export default About3DContainer
