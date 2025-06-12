@@ -19,9 +19,19 @@ function IndexStyles() {
           "--secondary-color-extradark": "#7c3412",
           "--secondary-color-extralight": "#fff0d5",
 
-          "--gray":"#ffffff80",
-          "--gray-dark":"#ffffff40",
-          "--gray-light":"#ffffffbf",
+          "--gray": "#ffffff80",
+          "--gray-dark": "#ffffff40",
+          "--gray-light": "#ffffffbf",
+
+          "--neutral-50": "#fafafa",
+          "--neutral-100": "#f5f5f5",
+          "--neutral-200": "#e5e5e5",
+          "--neutral-300": "#d4d4d4",
+          "--neutral-400": "#a1a1a1",
+          "--neutral-500": "#737373",
+          "--neutral-600": "#525252",
+          "--neutral-700": "#404040",
+          "--neutral-800": "#262626",
 
           "--font-title": "Lexend, sans-serif",
           "--font-text": "Inter, sans-serif",
@@ -35,16 +45,15 @@ function IndexStyles() {
           "--font-size-XS": "16px",
           "--font-size-XXS": "14px",
 
-          "--headers-color": "white",
-          "--texts-color": "#ffffffbf",
-          "--hero-texts-shadows": ""
+          "--headers-color": "var(--neutral-100)",
+          "--texts-color": "var(--neutral-200)",
+          "--hero-texts-shadows": "",
         },
 
-        ".custom-theme-light":{
-          "--hero-bg-color": "#fafafa",
-          "--headers-color": "#262626",
-          "--texts-color": "#404040",
-          
+        ".custom-theme-light": {
+          "--hero-bg-color": "var(--neutral-100)",
+          "--headers-color": "var(--neutral-800)",
+          "--texts-color": "var(--neutral-800)",
         },
 
         "*": {

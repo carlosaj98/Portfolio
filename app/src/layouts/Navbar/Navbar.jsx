@@ -5,13 +5,13 @@ import NavLinks from "./NavLinks"
 import { IconLanguage } from "../../common/Icons/Icons"
 import { useState } from "react"
 import LangMenu from "../../components/LangMenu/LangMenu"
-import { useTheme } from "../../context/CustomThemeContext"
+import { useCustomTheme } from "../../context/CustomThemeContext"
 
 function Navbar() {
   const isMobileScreen = useMediaQuery("(max-width: 600px)")
   const [isVisible, setIsVisible] = useState(false)
   const navLinks = NavLinks()
-  const { toggleTheme } = useTheme()
+  const { toggleTheme } = useCustomTheme()
   return (
     <NavbarContainer marginBottom={{ sm: "24px", xs: "12px" }}>
       <Stack className="navlinks-container">
@@ -42,7 +42,9 @@ function Navbar() {
         {isVisible && <LangMenu action={() => setIsVisible(false)} />}
       </Stack>
       <Stack>
-        <Button variant="contained" onClick={toggleTheme}>Theme</Button>
+        <Button variant="contained" onClick={toggleTheme}>
+          Theme
+        </Button>
       </Stack>
     </NavbarContainer>
   )
