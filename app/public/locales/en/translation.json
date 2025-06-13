@@ -57,7 +57,10 @@
     "form_email":"Your email",
     "form_subject":"Write a subject",
     "form_content":"Write something",
-    "form_button":"Send"
+    "form_button":"Send",
+    "Can`t be empty": "Can`t be empty",
+    "Must be a valid email": "Must be a valid email",
+    "Message sent successfully": "Message sent successfully"
   },
 
   "lang_button":{

@@ -1,15 +1,19 @@
 import { TextField } from "@mui/material"
 import { useCustomTheme } from "../../context/CustomThemeContext"
+import { useTranslation } from "react-i18next"
 
 function InputTemplate({ field, errors, name, rest }) {
   const { theme } = useCustomTheme()
+  const { t } = useTranslation()
   return (
     <TextField
       {...field}
       {...rest}
       label=""
       error={!!errors[name]}
-      helperText={errors[name]?.message || ""}
+      helperText={
+        errors[name] ? t(`contact_section.${errors[name]?.message}`) : ""
+      }
       fullWidth
       autoComplete="off"
       InputProps={{
