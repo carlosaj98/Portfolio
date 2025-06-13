@@ -12,7 +12,7 @@ function WorkSection() {
   const { isVisible, sectionRef } = useReveal()
   const template = worksTemplate()
   const handleClick = (current) => setCurrentWork(current)
-  const {t} = useTranslation()
+  const { t } = useTranslation()
   return (
     <WorkSectionContainer
       id="works-section"
@@ -20,8 +20,8 @@ function WorkSection() {
       sx={{
         background:
           currentWork === "developer"
-            ? "radial-gradient(circle at bottom right , var(--primary-color-light) -200%, black 90%)"
-            : "radial-gradient(circle at bottom left , var(--secondary-color) -200%, black 90%)",
+            ? "radial-gradient(circle at bottom right , var(--primary-color-light) -150%, var(--hero-bg-color) 90%)"
+            : "radial-gradient(circle at bottom left , var(--secondary-color-light) -150%, var(--hero-bg-color) 90%)",
       }}
     >
       <Container className="container" sx={{ opacity: isVisible ? "1" : "0" }}>

@@ -14,7 +14,7 @@ const WorkSectionContainer = styled(Stack)({
   },
 
   h3: {
-    color: "white",
+    color: "var(--headers-color)",
     fontFamily: "var(--font-title)",
     marginTop: "32px",
     textAlign: "center",
