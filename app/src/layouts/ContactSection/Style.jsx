@@ -1,7 +1,7 @@
 import { Stack, styled } from "@mui/material"
 
 const ContactSectionContainer = styled(Stack)({
-  background:"radial-gradient(circle at center, var(--primary-color-light) -250%, var(--hero-bg-color))",
+  background:"radial-gradient(circle at center, var(--primary-color-light) -200%, var(--hero-bg-color))",
 
   ".container": {
     display: "flex",
@@ -12,7 +12,7 @@ const ContactSectionContainer = styled(Stack)({
   },
 
   h3: {
-    color: "white",
+    color: "var(--headers-color)",
     fontFamily: "var(--font-title)",
     marginTop: "32px",
   },

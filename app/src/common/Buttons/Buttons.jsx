@@ -5,7 +5,7 @@ const CustomButton = styled(Button)(() => {
   const { theme } = useCustomTheme()
   return {
     textTransform: "none",
-    color: "var(--neutral-800)",
+    color: theme === "dark" ? "var(--neutral-300)" : "var(--neutral-600)",
     fontFamily: "var(--font-text)",
     borderRadius: "12px",
     padding: "6px 12px",
@@ -32,8 +32,7 @@ function DeveloperButton({ text, variant, action }) {
             : "2px solid var(--neutral-600)",
         color: theme === "dark" ? "var(--neutral-300)" : "var(--neutral-600)",
         fontSize: { md: "var(--font-size-XS)", xs: "var(--font-size-XXS)" },
-        boxShadow:
-          variant === "developer" && "0 0 20px var(--primary-color)",
+        boxShadow: variant === "developer" && "0 0 20px var(--primary-color)",
         transition: "all 0.3s ease-out",
       }}
     >
@@ -66,10 +65,17 @@ function ArtistButton({ text, variant, action }) {
 }
 
 function SubmitButton({ text }) {
+  const { theme } = useCustomTheme()
   return (
     <CustomButton
       type="submit"
-      sx={{ border: "2px solid var(--gray)", fontSize: "var(--font-size-XS)" }}
+      sx={{
+        border:
+          theme === "dark"
+            ? "2px solid var(--neutral-300)"
+            : "2px solid var(--neutral-600)",
+        fontSize: "var(--font-size-XS)",
+      }}
     >
       {text}
     </CustomButton>
