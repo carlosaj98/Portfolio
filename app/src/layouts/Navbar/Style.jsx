@@ -14,7 +14,7 @@ const NavbarContainer = styled(Stack)({
     alignItems: "baseline",
     backgroundColor: "rgba(0,0,0,0.6)",
     padding: "4px",
-    backdropFilter: "blur(7px)",
+    backdropFilter: "blur(5px)",
     borderRadius: "64px",
     gap: "6px",
     border: "2px solid var(--gray)",

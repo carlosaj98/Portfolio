@@ -6,6 +6,7 @@ import { IconLanguage } from "../../common/Icons/Icons"
 import { useState } from "react"
 import LangMenu from "../../components/LangMenu/LangMenu"
 import { useCustomTheme } from "../../context/CustomThemeContext"
+import SwitchTheme from "../../components/SwitchTheme/SwitchTheme"
 
 function Navbar() {
   const isMobileScreen = useMediaQuery("(max-width: 600px)")
@@ -41,11 +42,7 @@ function Navbar() {
         </Box>
         {isVisible && <LangMenu action={() => setIsVisible(false)} />}
       </Stack>
-      <Stack>
-        <Button variant="contained" onClick={toggleTheme}>
-          Theme
-        </Button>
-      </Stack>
+      <SwitchTheme />
     </NavbarContainer>
   )
 }
