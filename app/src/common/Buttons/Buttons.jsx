@@ -9,11 +9,13 @@ const CustomButton = styled(Button)(() => {
     fontFamily: "var(--font-text)",
     borderRadius: "12px",
     padding: "6px 12px",
-    "&:hover": {
-      backgroundColor:
-        theme === "dark" ? "var(--neutral-100)" : "var(--neutral-800)",
-      border: "2px solid transparent",
-      color: theme === "dark" ? "var(--neutral-800)" : "var(--neutral-100)",
+    "@media(hover: hover)": {
+      "&:hover": {
+        backgroundColor:
+          theme === "dark" ? "var(--neutral-100)" : "var(--neutral-800)",
+        border: "2px solid transparent",
+        color: theme === "dark" ? "var(--neutral-800)" : "var(--neutral-100)",
+      },
     },
   }
 })

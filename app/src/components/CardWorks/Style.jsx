@@ -62,13 +62,15 @@ const CardWorksContainer = styled(Stack)(() => {
         transition: "all 0.25s ease",
         fill: theme === "dark" ? "var(--neutral-400)" : "var(--neutral-600)",
       },
-      "&:hover": {
-        svg: {
-          fill:
-            theme === "dark"
-              ? "var(--primary-color-light)"
-              : "var(--primary-color)",
-          transform: "scale(1.2)",
+      "@media(hover: hover)": {
+        "&:hover": {
+          svg: {
+            fill:
+              theme === "dark"
+                ? "var(--primary-color-light)"
+                : "var(--primary-color)",
+            transform: "scale(1.2)",
+          },
         },
       },
     },
@@ -78,13 +80,15 @@ const CardWorksContainer = styled(Stack)(() => {
         transition: "all 0.25s ease",
         fill: theme === "dark" ? "var(--neutral-400)" : "var(--neutral-600)",
       },
-      "&:hover": {
-        svg: {
-          fill:
-            theme === "dark"
-              ? "var(--secondary-color-light)"
-              : "var(--secondary-color)",
-          transform: "scale(1.2)",
+      "@media(hover: hover)": {
+        "&:hover": {
+          svg: {
+            fill:
+              theme === "dark"
+                ? "var(--secondary-color-light)"
+                : "var(--secondary-color)",
+            transform: "scale(1.2)",
+          },
         },
       },
     },

@@ -25,9 +25,11 @@ const HeroTextsContainer = styled(Stack)(() => {
     ".social-media-links svg": {
       transition: "scale 0.15s ease-out, fill 0.15s ease-out",
       fill: theme === "dark" ? "var(--neutral-400)" : "var(--neutral-600)",
-      "&:hover": {
-        scale: "1.2",
-        fill: theme === "dark" ? "var(--neutral-100)" : "var(--neutral-800)",
+      "@media (hover: hover)": {
+        "&:hover": {
+          scale: "1.2",
+          fill: theme === "dark" ? "var(--neutral-100)" : "var(--neutral-800)",
+        },
       },
     },
 
@@ -35,7 +37,10 @@ const HeroTextsContainer = styled(Stack)(() => {
       textDecoration: "none",
       padding: "12px 16px",
       borderRadius: "12px",
-      border: theme === "dark" ? "2px solid var(--neutral-400)" : "2px solid var(--neutral-600)",
+      border:
+        theme === "dark"
+          ? "2px solid var(--neutral-400)"
+          : "2px solid var(--neutral-600)",
       color: theme === "dark" ? "var(--neutral-400)" : "var(--neutral-600)",
       fontFamily: "var(--font-text)",
       fontWeight: "500",
@@ -50,14 +55,18 @@ const HeroTextsContainer = styled(Stack)(() => {
         fill: theme === "dark" ? "var(--neutral-400)" : "var(--neutral-600)",
         transition: "fill 0.3s ease",
       },
-      "&:hover": {
-        backgroundColor:
-          theme === "dark" ? "var(--neutral-100)" : "var(--neutral-800)",
-        borderColor: theme === "dark" ? "var(--neutral-100)" : "var(--neutral-800)",
-        color: theme === "dark" ? "var(--neutral-800)" : "var(--neutral-100)",
-        border: "2px solid transparent",
-        svg: {
-          fill: theme === "dark" ? "var(--neutral-800)" : "var(--neutral-100)",
+      "@media (hover: hover)": {
+        "&:hover": {
+          backgroundColor:
+            theme === "dark" ? "var(--neutral-100)" : "var(--neutral-800)",
+          borderColor:
+            theme === "dark" ? "var(--neutral-100)" : "var(--neutral-800)",
+          color: theme === "dark" ? "var(--neutral-800)" : "var(--neutral-100)",
+          border: "2px solid transparent",
+          svg: {
+            fill:
+              theme === "dark" ? "var(--neutral-800)" : "var(--neutral-100)",
+          },
         },
       },
     },

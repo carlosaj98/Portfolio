@@ -3,7 +3,7 @@ import { Stack, styled } from "@mui/material"
 const SwitchThemeContainer = styled(Stack)(({ theme }) => {
   return {
     borderRadius: "50%",
-    border: "2px solid var(--gray-light)",
+    border: "2px solid var(--gray)",
     backgroundColor: "rgba(0,0,0,0.6)",
     padding: "4px",
     height: "48px",

@@ -33,7 +33,7 @@ function Navbar() {
           height={"48px"}
           width={"48px"}
           borderRadius={"50%"}
-          border={"2px solid var(--gray-light)"}
+          border={"2px solid var(--gray)"}
           padding={"6px"}
           onClick={() => setIsVisible((status) => !status)}
           sx={{ cursor: "pointer", backgroundColor: "rgba(0,0,0,0.6)" }}
