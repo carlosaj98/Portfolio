@@ -4,12 +4,12 @@ const SwitchThemeContainer = styled(Stack)(({ theme }) => {
   return {
     borderRadius: "50%",
     border: "2px solid var(--gray)",
-    backgroundColor: "rgba(0,0,0,0.6)",
+    backgroundColor:
+      theme === "dark" ? "var(--neutral-800)" : "rgba(0,0,0,0.6)",
     padding: "4px",
     height: "48px",
     width: "48px",
     cursor: "pointer",
-
 
     ".icon-container": {
       height: "100%",
@@ -17,7 +17,6 @@ const SwitchThemeContainer = styled(Stack)(({ theme }) => {
       padding: "3px",
       borderRadius: "50%",
       transition: "background-color 0.3s ease",
-      backgroundColor: theme === "dark" && "var(--neutral-800)",
 
       "@media (hover: hover)": {
         "&:hover": {
