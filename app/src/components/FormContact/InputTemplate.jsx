@@ -1,18 +1,24 @@
 import { TextField } from "@mui/material"
+import { useCustomTheme } from "../../context/CustomThemeContext"
+import { useTranslation } from "react-i18next"
 
 function InputTemplate({ field, errors, name, rest }) {
+  const { theme } = useCustomTheme()
+  const { t } = useTranslation()
   return (
     <TextField
       {...field}
       {...rest}
       label=""
       error={!!errors[name]}
-      helperText={errors[name]?.message || ""}
+      helperText={
+        errors[name] ? t(`contact_section.${errors[name]?.message}`) : ""
+      }
       fullWidth
       autoComplete="off"
       InputProps={{
         sx: {
-          color: "white",
+          color: "var(--texts-color)",
           fontFamily: "var(--font-text)",
           fontSize: "var(--font-size-XS)",
         },
@@ -24,15 +30,26 @@ function InputTemplate({ field, errors, name, rest }) {
             transition: "all 0.3s ease-out",
             border: "2px solid transparent",
             borderRadius: "12px",
-            backgroundColor: "var(--gray-dark)",
+            backgroundColor:
+              theme === "dark" ? "rgba(255,255,255,0.1)" : "rgba(0, 0, 0, 0.1)",
+            boxShadow:
+              theme === "dark"
+                ? "0 0px 3px var(--neutral-400)"
+                : "0 0px 3px var(--neutral-600)",
           },
           "&:hover fieldset": {
-            border: "2px solid white",
-            boxShadow: "0 0 10px white",
+            border: "2px solid var(--neutral-500)",
+            boxShadow: "0 0 6px var(--neutral-500)",
           },
           "&.Mui-focused fieldset": {
-            boxShadow: "0 0 10px var(--primary-color-light)",
-            border: "2px solid var(--primary-color-light)",
+            boxShadow:
+              theme === "dark"
+                ? "0 0 6px var(--primary-color-light)"
+                : "0 0 6px var(--primary-color-dark)",
+            border:
+              theme === "dark"
+                ? "2px solid var(--primary-color-light)"
+                : "2px solid var(--primary-color-dark)",
             backgroundColor: "var(--gray-dark)",
           },
         },

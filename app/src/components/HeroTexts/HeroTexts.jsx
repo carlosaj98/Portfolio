@@ -30,7 +30,7 @@ function HeroTexts({ titleIndex, currentTitle }) {
         <Typography
           variant="h2"
           className="animate__fadeInLeft"
-          color="var(--primary-color-light)"
+          color="var(--primary-color)"
           textAlign={{ md: "left", xs: "center" }}
           fontSize={{
             lg: "var(--font-size-XXL)",
@@ -38,7 +38,7 @@ function HeroTexts({ titleIndex, currentTitle }) {
             xs: "var(--font-size-L)",
           }}
           sx={{
-            textShadow: "0 0 6px var(--primary-color-light)",
+            textShadow: "0 0 6px var(--primary-color)",
           }}
         >
           {currentTitle}
@@ -86,7 +86,7 @@ function HeroTexts({ titleIndex, currentTitle }) {
           height={"30px"}
           className="social-media-links"
         >
-          <IconLinkedin color={"var(--gray)"} />
+          <IconLinkedin />
         </Link>
         <Link
           href="https://www.artstation.com/carlosaj"
@@ -95,7 +95,7 @@ function HeroTexts({ titleIndex, currentTitle }) {
           height={"30px"}
           className="social-media-links"
         >
-          <IconArtstation color={"var(--gray)"} />
+          <IconArtstation />
         </Link>
 
         <Link
@@ -105,7 +105,7 @@ function HeroTexts({ titleIndex, currentTitle }) {
           height={"30px"}
           className="social-media-links"
         >
-          <IconGithub color={"var(--gray)"} />
+          <IconGithub />
         </Link>
         <Link
           href={t("cv.href")}
@@ -113,7 +113,7 @@ function HeroTexts({ titleIndex, currentTitle }) {
           className="cv-download"
         >
           {t("home_section.cv_button")}
-          <IconDownload color={"var(--gray)"} size={"16px"} />
+          <IconDownload size={"16px"} />
         </Link>
       </Stack>
     </HeroTextsContainer>

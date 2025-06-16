@@ -8,7 +8,7 @@ import emailService from "../../services/emailService"
 import { useTranslation } from "react-i18next"
 
 function FormContact({ fields, validation }) {
-  const {t} = useTranslation()
+  const { t } = useTranslation()
   const {
     control,
     handleSubmit,
@@ -26,7 +26,7 @@ function FormContact({ fields, validation }) {
       message: data.content,
       to_email: TO_EMAIL,
     }
-    emailService(templateParams, reset)
+    emailService(templateParams, reset, t)
   }
 
   return (

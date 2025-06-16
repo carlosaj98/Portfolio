@@ -1,32 +1,40 @@
 import { Button, styled } from "@mui/material"
+import { useCustomTheme } from "../../context/CustomThemeContext"
 
-const CustomButton = styled(Button)({
-  textTransform: "none",
-  color: "var(--gray)",
-  fontFamily: "var(--font-text)",
-  borderRadius: "12px",
-  padding: "6px 12px",
-  "&:hover": {
-    backgroundColor: "var(--gray-light)",
-    border: "2px solid transparent",
-    boxShadow: "0 0 30px var(--gray-light)",
-    color: "black",
-  },
+const CustomButton = styled(Button)(() => {
+  const { theme } = useCustomTheme()
+  return {
+    textTransform: "none",
+    color: theme === "dark" ? "var(--neutral-300)" : "var(--neutral-600)",
+    fontFamily: "var(--font-text)",
+    borderRadius: "12px",
+    padding: "6px 12px",
+    "@media(hover: hover)": {
+      "&:hover": {
+        backgroundColor:
+          theme === "dark" ? "var(--neutral-100)" : "var(--neutral-800)",
+        border: "2px solid transparent",
+        color: theme === "dark" ? "var(--neutral-800)" : "var(--neutral-100)",
+      },
+    },
+  }
 })
 
 function DeveloperButton({ text, variant, action }) {
+  const { theme } = useCustomTheme()
   return (
     <CustomButton
       onClick={() => action("developer")}
       sx={{
         border:
           variant === "developer"
-            ? "2px solid var(--primary-color-light)"
-            : "2px solid var(--gray)",
-        color: variant === "developer" && "white",
+            ? "2px solid var(--primary-color)"
+            : theme === "dark"
+            ? "2px solid var(--neutral-300)"
+            : "2px solid var(--neutral-600)",
+        color: theme === "dark" ? "var(--neutral-300)" : "var(--neutral-600)",
         fontSize: { md: "var(--font-size-XS)", xs: "var(--font-size-XXS)" },
-        boxShadow:
-          variant === "developer" && "0 0 30px var(--primary-color-light)",
+        boxShadow: variant === "developer" && "0 0 20px var(--primary-color)",
         transition: "all 0.3s ease-out",
       }}
     >
@@ -36,6 +44,7 @@ function DeveloperButton({ text, variant, action }) {
 }
 
 function ArtistButton({ text, variant, action }) {
+  const { theme } = useCustomTheme()
   return (
     <CustomButton
       onClick={() => action("artist")}
@@ -43,11 +52,12 @@ function ArtistButton({ text, variant, action }) {
         border:
           variant === "artist"
             ? "2px solid var(--secondary-color)"
-            : "2px solid var(--gray)",
-        color: variant === "artist" && "white",
+            : theme === "dark"
+            ? "2px solid var(--neutral-300)"
+            : "2px solid var(--neutral-600)",
+        color: theme === "dark" ? "var(--neutral-300)" : "var(--neutral-600)",
         fontSize: { md: "var(--font-size-XS)", xs: "var(--font-size-XXS)" },
-        boxShadow:
-          variant === "artist" && "0 0 30px var(--secondary-color)",
+        boxShadow: variant === "artist" && "0 0 30px var(--secondary-color)",
         transition: "all 0.3s ease-out",
       }}
     >
@@ -57,10 +67,17 @@ function ArtistButton({ text, variant, action }) {
 }
 
 function SubmitButton({ text }) {
+  const { theme } = useCustomTheme()
   return (
     <CustomButton
       type="submit"
-      sx={{ border: "2px solid var(--gray)", fontSize: "var(--font-size-XS)" }}
+      sx={{
+        border:
+          theme === "dark"
+            ? "2px solid var(--neutral-300)"
+            : "2px solid var(--neutral-600)",
+        fontSize: "var(--font-size-XS)",
+      }}
     >
       {text}
     </CustomButton>

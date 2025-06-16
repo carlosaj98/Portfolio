@@ -15,7 +15,7 @@ function HomeSection() {
       }, 2500)
       return () => clearInterval(interval)
     }, 1000)
-  }, [heroTitles.length])
+  }, [])
 
   const currentTitle = heroTitles[currentTitleIndex]
 

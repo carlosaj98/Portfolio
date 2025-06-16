@@ -51,20 +51,23 @@
     }
   },
   "contact_section": {
-    "contact_title":"Contáctame",
+    "contact_title": "Contáctame",
     "form_name": "Tu nombre",
     "form_email": "Tu email",
     "form_subject": "Escribe un asunto",
     "form_content": "Escribe algo",
-    "form_button":"Enviar"
+    "form_button": "Enviar",
+    "Can`t be empty": "No puede estar vacio",
+    "Must be a valid email": "Debe ser un email",
+    "Message sent successfully": "Mensaje enviado exitosamente"
   },
 
-  "lang_button":{
-    "spanish":"Español",
-    "english":"Inglés"
+  "lang_button": {
+    "spanish": "Español",
+    "english": "Inglés"
   },
-  "cv":{
-    "href":"/cv/CV_CarlosAlvarezJimenez.pdf",
-    "file_name":"CV_CarlosAlvarezJimenez"
+  "cv": {
+    "href": "/cv/CV_CarlosAlvarezJimenez.pdf",
+    "file_name": "CV_CarlosAlvarezJimenez"
   }
 }

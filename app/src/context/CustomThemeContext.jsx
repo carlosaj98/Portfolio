@@ -28,4 +28,4 @@ export const CustomThemeProvider = ({ children }) => {
   )
 }
 
-export const useTheme = () => useContext(CustomThemeContext)
+export const useCustomTheme = () => useContext(CustomThemeContext)

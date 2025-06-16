@@ -2,11 +2,11 @@ import { Stack, styled } from "@mui/material"
 
 const AboutContainer = styled(Stack)({
   height: "100%",
-  color: "white",
+  color: "var(--headers-color)",
   alignItems: "center",
-  background: `radial-gradient(circle at top left, var(--primary-color-light) -200%, transparent 70%), 
-    radial-gradient(circle at bottom right, var(--secondary-color) -200%, transparent 70%)`,
-  backgroundColor: "black",
+  background: `radial-gradient(circle at top left, var(--primary-color-light) -150%, transparent 70%), 
+    radial-gradient(circle at bottom right, var(--secondary-color-light) -150%, transparent 70%)`,
+  backgroundColor: "var(--hero-bg-color)",
 
   ".container": {
     display: "flex",
