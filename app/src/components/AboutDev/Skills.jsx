@@ -10,7 +10,10 @@ import {
   IconSQL,
   IconTypeScript,
   IconRedux,
-  IconChakra
+  IconChakra,
+  IconPython,
+  IconDjango,
+  IconPostgre,
 } from "../../common/Icons/IconsDev"
 
 const Skills = [
@@ -33,6 +36,11 @@ const Skills = [
     id: "icon-typescript",
     icon: <IconTypeScript />,
     text: "TypeScript",
+  },
+  {
+    id: "icon-python",
+    icon: <IconPython />,
+    text: "Python",
   },
   {
     id: "icon-React",
@@ -60,9 +68,9 @@ const Skills = [
     text: "Node.js",
   },
   {
-    id: "icon-express",
-    icon: <IconExpress />,
-    text: "Express",
+    id: "icon-django",
+    icon: <IconDjango />,
+    text: "Django",
   },
   {
     id: "icon-mongo",
@@ -73,6 +81,11 @@ const Skills = [
     id: "icon-sql",
     icon: <IconSQL />,
     text: "MySQL",
+  },
+  {
+    id: "icon-postgre",
+    icon: <IconPostgre />,
+    text: "PostgreSQL",
   },
 ]
 
